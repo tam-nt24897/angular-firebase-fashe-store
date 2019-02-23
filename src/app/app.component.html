@@ -40,16 +40,16 @@
         <nav class="menu">
           <ul class="main_menu">
             <li>
-              <a href="index.html">Home</a>
-              <ul class="sub_menu">
-                <li><a href="index.html">Homepage V1</a></li>
+              <a [routerLink]="['']">Home</a>
+              <!-- <ul class="sub_menu">
+                <li><a [routerLink]="['']">Homepage V1</a></li>
                 <li><a href="home-02.html">Homepage V2</a></li>
                 <li><a href="home-03.html">Homepage V3</a></li>
-              </ul>
+              </ul> -->
             </li>
 
             <li>
-              <a href="product.html">Shop</a>
+              <a [routerLink]="[ '/product']">Shop</a>
             </li>
 
             <li class="sale-noti">
@@ -524,3 +524,4 @@
 
 <!-- Container Selection1 -->
 <div id="dropDownSelect1"></div>
+<div id="dropDownSelect2"></div>

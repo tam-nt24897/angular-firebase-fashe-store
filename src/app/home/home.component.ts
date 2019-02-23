@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
-import { LoadScriptsService } from '../service/loadScripts.service';
+import { HomeService } from '../service/home.service';
 
 @Component({
   selector: 'app-home',
@@ -9,13 +9,14 @@ import { LoadScriptsService } from '../service/loadScripts.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(db: AngularFireDatabase, loadScript: LoadScriptsService) {
+  constructor(db: AngularFireDatabase, homeService: HomeService) {
 
-    const courses$: AngularFireList<any> = db.list('products');
 
-    courses$.valueChanges().subscribe(
-      val => console.log(val)
-    );
+    // const courses$: AngularFireList<any> = db.list('products');
+
+    // courses$.valueChanges().subscribe(
+    //   val => console.log(val)
+    // );
 
 
   }

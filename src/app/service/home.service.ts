@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-    // we declare that this service should be created
-    // by the root application injector.
     providedIn: 'root',
 })
-export class LoadScriptsService {
+export class HomeService {
 
     constructor() {
         this.loadScript('../assets/vendor/jquery/jquery-3.2.1.min.js');
@@ -15,6 +13,7 @@ export class LoadScriptsService {
         this.loadScript('../assets/vendor/bootstrap/js/bootstrap.min.js');
         this.loadScript('../assets/vendor/select2/select2.min.js');
         this.loadScript('../assets/js/select2.js');
+
         this.loadScript('../assets/vendor/slick/slick.min.js');
         this.loadScript('../assets/js/slick-custom.js');
         this.loadScript('../assets/vendor/countdowntime/countdowntime.js');

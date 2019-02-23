@@ -7,12 +7,17 @@ import { HomeComponent } from './home/home.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
-import { LoadScriptsService } from './service/loadScripts.service';
+import { HomeService } from './service/home.service';
+import { ProductService } from './service/product.service';
+import { ProductComponent } from './product/product.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProductComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +25,7 @@ import { LoadScriptsService } from './service/loadScripts.service';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
   ],
-  providers: [LoadScriptsService],
+  providers: [HomeService, ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
