@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
 import { Product } from '../model/product';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class ProductService {
       this.loadScript('../assets/vendor/bootstrap/js/popper.js');
       this.loadScript('../assets/vendor/bootstrap/js/bootstrap.min.js');
       this.loadScript('../assets/vendor/select2/select2.min.js');
-      this.loadScript('../assets/js/select2.js');
+      this.loadScript('../assets/js/select2-all.js');
       this.loadScript('../assets/vendor/daterangepicker/moment.min.js');
       this.loadScript('../assets/vendor/daterangepicker/daterangepicker.js');
 
@@ -29,7 +30,19 @@ export class ProductService {
 
   }
 
+
+  products$: AngularFireList<Product>;
+
   findAllProducts(): AngularFireList<Product> {
+
+    this.products$ = this.db.list('products');
+    // // Use snapshotChanges().map() to store the key
+    // this.products = this.productRef.snapshotChanges().pipe(map(changes => {
+    //   return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
+    // }));
+
+    // return this.products.subscribe(val => console.log(val));
+
     return this.db.list('products');
   }
 

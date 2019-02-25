@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'product-detail/:id',
     component: ProductDetailComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   { path: '**', component: HomeComponent }
 ];

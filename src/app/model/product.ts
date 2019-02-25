@@ -1,7 +1,9 @@
+import { map } from 'rxjs/operators';
+
 export class Product {
 
     constructor(
-        public $key: string,
+        public name: string,
         public url: string,
         public price: number,
         public size: string,
@@ -19,11 +21,16 @@ export class Product {
 
     }
 
-    static fromJson({ $key, url, price, size, color, quantity, type, image, categories, description, add_info, reviews, percent_discount, tags }) {
+    static fromJson({ name, url, price, size, color, quantity, type, image, categories, description, add_info, reviews, percent_discount, tags }) {
 
-        return new Product($key, url, price, size, color, quantity, type, image, categories, description, add_info, reviews, percent_discount, tags);
+        return new Product(name, url, price, size, color, quantity, type, image, categories, description, add_info, reviews, percent_discount, tags);
     }
+
     static fromJsonArray(json: any[]): Product[] {
         return json.map(Product.fromJson);
     }
+
+    // static fromJsonList(array): Product[] {
+    //     return array.map(json => Product.fromJson(json));
+    // }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../service/product.service';
-import { AngularFireList, AngularFireDatabase, snapshotChanges } from '@angular/fire/database';
+import { AngularFireList, AngularFireDatabase, snapshotChanges, AngularFireObject } from '@angular/fire/database';
 import { Product } from '../model/product';
 
 @Component({
@@ -28,7 +28,6 @@ export class ProductComponent implements OnInit {
       .valueChanges()
       .subscribe(pro => {
         this.products$ = pro;
-        console.log(this.products$);
       });
   }
 

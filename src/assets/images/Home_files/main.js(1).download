@@ -1,0 +1,825 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/$$_lazy_route_resource lazy recursive":
+/*!**********************************************************!*\
+  !*** ./src/$$_lazy_route_resource lazy namespace object ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _product_product_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./product/product.component */ "./src/app/product/product.component.ts");
+/* harmony import */ var _product_detail_product_detail_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./product-detail/product-detail.component */ "./src/app/product-detail/product-detail.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+
+
+
+
+
+
+
+var routes = [
+    {
+        path: 'home',
+        // redirectTo: '/heroes',
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
+    },
+    {
+        path: 'product',
+        component: _product_product_component__WEBPACK_IMPORTED_MODULE_4__["ProductComponent"]
+    },
+    {
+        path: 'product-detail/:id',
+        component: _product_detail_product_detail_component__WEBPACK_IMPORTED_MODULE_5__["ProductDetailComponent"]
+    },
+    {
+        path: 'login',
+        component: _login_login_component__WEBPACK_IMPORTED_MODULE_6__["LoginComponent"]
+    },
+    { path: '**', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] }
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.css":
+/*!***********************************!*\
+  !*** ./src/app/app.component.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/app.component.html":
+/*!************************************!*\
+  !*** ./src/app/app.component.html ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Header -->\n<header class=\"header1\">\n  <!-- Header desktop -->\n  <div class=\"container-menu-header\">\n    <div class=\"topbar\">\n      <div class=\"topbar-social\">\n        <a href=\"#\" class=\"topbar-social-item fa fa-facebook\"></a>\n        <a href=\"#\" class=\"topbar-social-item fa fa-instagram\"></a>\n        <a href=\"#\" class=\"topbar-social-item fa fa-pinterest-p\"></a>\n        <a href=\"#\" class=\"topbar-social-item fa fa-snapchat-ghost\"></a>\n        <a href=\"#\" class=\"topbar-social-item fa fa-youtube-play\"></a>\n      </div>\n\n      <span class=\"topbar-child1\">\n        Free shipping for standard order over $100\n      </span>\n\n      <div class=\"topbar-child2\">\n        <span class=\"topbar-email\">\n          fashe@example.com\n        </span>\n\n        <div class=\"topbar-language rs1-select2\">\n          <select class=\"selection-1\" name=\"time\">\n            <option>USD</option>\n            <option>EUR</option>\n          </select>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"wrap_header\">\n      <!-- Logo -->\n      <a href=\"index.html\" class=\"logo\">\n        <img src=\"assets/images/icons/logo.png\" alt=\"IMG-LOGO\">\n      </a>\n\n      <!-- Menu -->\n      <div class=\"wrap_menu\">\n        <nav class=\"menu\">\n          <ul class=\"main_menu\">\n            <li>\n              <a [routerLink]=\"['']\">Home</a>\n              <!-- <ul class=\"sub_menu\">\n                <li><a [routerLink]=\"['']\">Homepage V1</a></li>\n                <li><a href=\"home-02.html\">Homepage V2</a></li>\n                <li><a href=\"home-03.html\">Homepage V3</a></li>\n              </ul> -->\n            </li>\n\n            <li>\n              <a [routerLink]=\"[ '/product']\">Shop</a>\n            </li>\n\n            <li class=\"sale-noti\">\n              <a href=\"product.html\">Sale</a>\n            </li>\n\n            <li>\n              <a href=\"cart.html\">Features</a>\n            </li>\n\n            <li>\n              <a href=\"blog.html\">Blog</a>\n            </li>\n\n            <li>\n              <a href=\"about.html\">About</a>\n            </li>\n\n            <li>\n              <a href=\"contact.html\">Contact</a>\n            </li>\n          </ul>\n        </nav>\n      </div>\n\n      <!-- Header Icon -->\n      <div class=\"header-icons\">\n        <a [routerLink]=\"['/login']\" class=\"header-wrapicon1 dis-block\">\n          <img src=\"assets/images/icons/icon-header-01.png\" class=\"header-icon1\" alt=\"ICON\">\n        </a>\n\n        <span class=\"linedivide1\"></span>\n\n        <div class=\"header-wrapicon2\">\n          <img src=\"assets/images/icons/icon-header-02.png\" class=\"header-icon1 js-show-header-dropdown\" alt=\"ICON\">\n          <span class=\"header-icons-noti\">0</span>\n\n          <!-- Header cart noti -->\n          <div class=\"header-cart header-dropdown\">\n            <ul class=\"header-cart-wrapitem\">\n              <li class=\"header-cart-item\">\n                <div class=\"header-cart-item-img\">\n                  <img src=\"assets/images/item-cart-01.jpg\" alt=\"IMG\">\n                </div>\n\n                <div class=\"header-cart-item-txt\">\n                  <a href=\"#\" class=\"header-cart-item-name\">\n                    White Shirt With Pleat Detail Back\n                  </a>\n\n                  <span class=\"header-cart-item-info\">\n                    1 x $19.00\n                  </span>\n                </div>\n              </li>\n\n              <li class=\"header-cart-item\">\n                <div class=\"header-cart-item-img\">\n                  <img src=\"assets/images/item-cart-02.jpg\" alt=\"IMG\">\n                </div>\n\n                <div class=\"header-cart-item-txt\">\n                  <a href=\"#\" class=\"header-cart-item-name\">\n                    Converse All Star Hi Black Canvas\n                  </a>\n\n                  <span class=\"header-cart-item-info\">\n                    1 x $39.00\n                  </span>\n                </div>\n              </li>\n\n              <li class=\"header-cart-item\">\n                <div class=\"header-cart-item-img\">\n                  <img src=\"assets/images/item-cart-03.jpg\" alt=\"IMG\">\n                </div>\n\n                <div class=\"header-cart-item-txt\">\n                  <a href=\"#\" class=\"header-cart-item-name\">\n                    Nixon Porter Leather Watch In Tan\n                  </a>\n\n                  <span class=\"header-cart-item-info\">\n                    1 x $17.00\n                  </span>\n                </div>\n              </li>\n            </ul>\n\n            <div class=\"header-cart-total\">\n              Total: $75.00\n            </div>\n\n            <div class=\"header-cart-buttons\">\n              <div class=\"header-cart-wrapbtn\">\n                <!-- Button -->\n                <a href=\"cart.html\" class=\"flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4\">\n                  View Cart\n                </a>\n              </div>\n\n              <div class=\"header-cart-wrapbtn\">\n                <!-- Button -->\n                <a href=\"#\" class=\"flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4\">\n                  Check Out\n                </a>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Header Mobile -->\n  <div class=\"wrap_header_mobile\">\n    <!-- Logo moblie -->\n    <a href=\"index.html\" class=\"logo-mobile\">\n      <img src=\"assets/images/icons/logo.png\" alt=\"IMG-LOGO\">\n    </a>\n\n    <!-- Button show menu -->\n    <div class=\"btn-show-menu\">\n      <!-- Header Icon mobile -->\n      <div class=\"header-icons-mobile\">\n        <a href=\"#\" class=\"header-wrapicon1 dis-block\">\n          <img src=\"assets/images/icons/icon-header-01.png\" class=\"header-icon1\" alt=\"ICON\">\n        </a>\n\n        <span class=\"linedivide2\"></span>\n\n        <div class=\"header-wrapicon2\">\n          <img src=\"assets/images/icons/icon-header-02.png\" class=\"header-icon1 js-show-header-dropdown\" alt=\"ICON\">\n          <span class=\"header-icons-noti\">0</span>\n\n          <!-- Header cart noti -->\n          <div class=\"header-cart header-dropdown\">\n            <ul class=\"header-cart-wrapitem\">\n              <li class=\"header-cart-item\">\n                <div class=\"header-cart-item-img\">\n                  <img src=\"assets/images/item-cart-01.jpg\" alt=\"IMG\">\n                </div>\n\n                <div class=\"header-cart-item-txt\">\n                  <a href=\"#\" class=\"header-cart-item-name\">\n                    White Shirt With Pleat Detail Back\n                  </a>\n\n                  <span class=\"header-cart-item-info\">\n                    1 x $19.00\n                  </span>\n                </div>\n              </li>\n\n              <li class=\"header-cart-item\">\n                <div class=\"header-cart-item-img\">\n                  <img src=\"assets/images/item-cart-02.jpg\" alt=\"IMG\">\n                </div>\n\n                <div class=\"header-cart-item-txt\">\n                  <a href=\"#\" class=\"header-cart-item-name\">\n                    Converse All Star Hi Black Canvas\n                  </a>\n\n                  <span class=\"header-cart-item-info\">\n                    1 x $39.00\n                  </span>\n                </div>\n              </li>\n\n              <li class=\"header-cart-item\">\n                <div class=\"header-cart-item-img\">\n                  <img src=\"assets/images/item-cart-03.jpg\" alt=\"IMG\">\n                </div>\n\n                <div class=\"header-cart-item-txt\">\n                  <a href=\"#\" class=\"header-cart-item-name\">\n                    Nixon Porter Leather Watch In Tan\n                  </a>\n\n                  <span class=\"header-cart-item-info\">\n                    1 x $17.00\n                  </span>\n                </div>\n              </li>\n            </ul>\n\n            <div class=\"header-cart-total\">\n              Total: $75.00\n            </div>\n\n            <div class=\"header-cart-buttons\">\n              <div class=\"header-cart-wrapbtn\">\n                <!-- Button -->\n                <a href=\"cart.html\" class=\"flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4\">\n                  View Cart\n                </a>\n              </div>\n\n              <div class=\"header-cart-wrapbtn\">\n                <!-- Button -->\n                <a href=\"#\" class=\"flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4\">\n                  Check Out\n                </a>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"btn-show-menu-mobile hamburger hamburger--squeeze\">\n        <span class=\"hamburger-box\">\n          <span class=\"hamburger-inner\"></span>\n        </span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Menu Mobile -->\n  <div class=\"wrap-side-menu\">\n    <nav class=\"side-menu\">\n      <ul class=\"main-menu\">\n        <li class=\"item-topbar-mobile p-l-20 p-t-8 p-b-8\">\n          <span class=\"topbar-child1\">\n            Free shipping for standard order over $100\n          </span>\n        </li>\n\n        <li class=\"item-topbar-mobile p-l-20 p-t-8 p-b-8\">\n          <div class=\"topbar-child2-mobile\">\n            <span class=\"topbar-email\">\n              fashe@example.com\n            </span>\n\n            <div class=\"topbar-language rs1-select2\">\n              <select class=\"selection-1\" name=\"time\">\n                <option>USD</option>\n                <option>EUR</option>\n              </select>\n            </div>\n          </div>\n        </li>\n\n        <li class=\"item-topbar-mobile p-l-10\">\n          <div class=\"topbar-social-mobile\">\n            <a href=\"#\" class=\"topbar-social-item fa fa-facebook\"></a>\n            <a href=\"#\" class=\"topbar-social-item fa fa-instagram\"></a>\n            <a href=\"#\" class=\"topbar-social-item fa fa-pinterest-p\"></a>\n            <a href=\"#\" class=\"topbar-social-item fa fa-snapchat-ghost\"></a>\n            <a href=\"#\" class=\"topbar-social-item fa fa-youtube-play\"></a>\n          </div>\n        </li>\n\n        <li class=\"item-menu-mobile\">\n          <a href=\"index.html\">Home</a>\n          <ul class=\"sub-menu\">\n            <li><a href=\"index.html\">Homepage V1</a></li>\n            <li><a href=\"home-02.html\">Homepage V2</a></li>\n            <li><a href=\"home-03.html\">Homepage V3</a></li>\n          </ul>\n          <i class=\"arrow-main-menu fa fa-angle-right\" aria-hidden=\"true\"></i>\n        </li>\n\n        <li class=\"item-menu-mobile\">\n          <a href=\"product.html\">Shop</a>\n        </li>\n\n        <li class=\"item-menu-mobile\">\n          <a href=\"product.html\">Sale</a>\n        </li>\n\n        <li class=\"item-menu-mobile\">\n          <a href=\"cart.html\">Features</a>\n        </li>\n\n        <li class=\"item-menu-mobile\">\n          <a href=\"blog.html\">Blog</a>\n        </li>\n\n        <li class=\"item-menu-mobile\">\n          <a href=\"about.html\">About</a>\n        </li>\n\n        <li class=\"item-menu-mobile\">\n          <a href=\"contact.html\">Contact</a>\n        </li>\n      </ul>\n    </nav>\n  </div>\n</header>\n\n<router-outlet></router-outlet>\n\n<!-- Footer -->\n<footer class=\"bg6 p-t-45 p-b-43 p-l-45 p-r-45\">\n  <div class=\"flex-w p-b-90\">\n    <div class=\"w-size6 p-t-30 p-l-15 p-r-15 respon3\">\n      <h4 class=\"s-text12 p-b-30\">\n        GET IN TOUCH\n      </h4>\n\n      <div>\n        <p class=\"s-text7 w-size27\">\n          Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96\n          716 6879\n        </p>\n\n        <div class=\"flex-m p-t-30\">\n          <a href=\"#\" class=\"fs-18 color1 p-r-20 fa fa-facebook\"></a>\n          <a href=\"#\" class=\"fs-18 color1 p-r-20 fa fa-instagram\"></a>\n          <a href=\"#\" class=\"fs-18 color1 p-r-20 fa fa-pinterest-p\"></a>\n          <a href=\"#\" class=\"fs-18 color1 p-r-20 fa fa-snapchat-ghost\"></a>\n          <a href=\"#\" class=\"fs-18 color1 p-r-20 fa fa-youtube-play\"></a>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"w-size7 p-t-30 p-l-15 p-r-15 respon4\">\n      <h4 class=\"s-text12 p-b-30\">\n        Categories\n      </h4>\n\n      <ul>\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Men\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Women\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Dresses\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Sunglasses\n          </a>\n        </li>\n      </ul>\n    </div>\n\n    <div class=\"w-size7 p-t-30 p-l-15 p-r-15 respon4\">\n      <h4 class=\"s-text12 p-b-30\">\n        Links\n      </h4>\n\n      <ul>\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Search\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            About Us\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Contact Us\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Returns\n          </a>\n        </li>\n      </ul>\n    </div>\n\n    <div class=\"w-size7 p-t-30 p-l-15 p-r-15 respon4\">\n      <h4 class=\"s-text12 p-b-30\">\n        Help\n      </h4>\n\n      <ul>\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Track Order\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Returns\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            Shipping\n          </a>\n        </li>\n\n        <li class=\"p-b-9\">\n          <a href=\"#\" class=\"s-text7\">\n            FAQs\n          </a>\n        </li>\n      </ul>\n    </div>\n\n    <div class=\"w-size8 p-t-30 p-l-15 p-r-15 respon3\">\n      <h4 class=\"s-text12 p-b-30\">\n        Newsletter\n      </h4>\n\n      <form>\n        <div class=\"effect1 w-size9\">\n          <input class=\"s-text7 bg6 w-full p-b-5\" type=\"text\" name=\"email\" placeholder=\"email@example.com\">\n          <span class=\"effect1-line\"></span>\n        </div>\n\n        <div class=\"w-size2 p-t-20\">\n          <!-- Button -->\n          <button class=\"flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4\">\n            Subscribe\n          </button>\n        </div>\n\n      </form>\n    </div>\n  </div>\n\n  <div class=\"t-center p-l-15 p-r-15\">\n    <a href=\"#\">\n      <img class=\"h-size2\" src=\"assets/images/icons/paypal.png\" alt=\"IMG-PAYPAL\">\n    </a>\n\n    <a href=\"#\">\n      <img class=\"h-size2\" src=\"assets/images/icons/visa.png\" alt=\"IMG-VISA\">\n    </a>\n\n    <a href=\"#\">\n      <img class=\"h-size2\" src=\"assets/images/icons/mastercard.png\" alt=\"IMG-MASTERCARD\">\n    </a>\n\n    <a href=\"#\">\n      <img class=\"h-size2\" src=\"assets/images/icons/express.png\" alt=\"IMG-EXPRESS\">\n    </a>\n\n    <a href=\"#\">\n      <img class=\"h-size2\" src=\"assets/images/icons/discover.png\" alt=\"IMG-DISCOVER\">\n    </a>\n\n    <div class=\"t-center s-text8 p-t-20\">\n      Copyright © 2018 All rights reserved. | This template is made with <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i>\n      by <a href=\"https://colorlib.com\" target=\"_blank\">Colorlib</a>\n    </div>\n  </div>\n</footer>\n\n\n\n<!-- Back to top -->\n<div class=\"btn-back-to-top bg0-hov\" id=\"myBtn\">\n  <span class=\"symbol-btn-back-to-top\">\n    <i class=\"fa fa-angle-double-up\" aria-hidden=\"true\"></i>\n  </span>\n</div>\n\n<!-- Container Selection1 -->\n<div id=\"dropDownSelect1\"></div>\n<div id=\"dropDownSelect2\"></div>\n"
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var AppComponent = /** @class */ (function () {
+    function AppComponent() {
+        this.title = 'angular-firebase-fashe-store';
+    }
+    AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-root',
+            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
+            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+        })
+    ], AppComponent);
+    return AppComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _angular_fire__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/fire */ "./node_modules/@angular/fire/index.js");
+/* harmony import */ var _angular_fire_database__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/fire/database */ "./node_modules/@angular/fire/database/index.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _service_home_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./service/home.service */ "./src/app/service/home.service.ts");
+/* harmony import */ var _service_product_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./service/product.service */ "./src/app/service/product.service.ts");
+/* harmony import */ var _product_product_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./product/product.component */ "./src/app/product/product.component.ts");
+/* harmony import */ var _product_detail_product_detail_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./product-detail/product-detail.component */ "./src/app/product-detail/product-detail.component.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
+                _product_product_component__WEBPACK_IMPORTED_MODULE_11__["ProductComponent"],
+                _product_detail_product_detail_component__WEBPACK_IMPORTED_MODULE_12__["ProductDetailComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"]
+            ],
+            imports: [
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+                _angular_fire__WEBPACK_IMPORTED_MODULE_6__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_8__["environment"].firebase),
+                _angular_fire_database__WEBPACK_IMPORTED_MODULE_7__["AngularFireDatabaseModule"],
+            ],
+            providers: [_service_home_service__WEBPACK_IMPORTED_MODULE_9__["HomeService"], _service_product_service__WEBPACK_IMPORTED_MODULE_10__["ProductService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/home/home.component.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.html":
+/*!******************************************!*\
+  !*** ./src/app/home/home.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<!-- Slide1 -->\n<section class=\"slide1\">\n  <div class=\"wrap-slick1\">\n    <div class=\"slick1\">\n      <div class=\"item-slick1 item1-slick1\" style=\"background-image: url(assets/images/master-slide-02.jpg);\">\n        <div class=\"wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170\">\n          <span class=\"caption1-slide1 m-text1 t-center animated visible-false m-b-15\" data-appear=\"fadeInDown\">\n            Women Collection 2018\n          </span>\n\n          <h2 class=\"caption2-slide1 xl-text1 t-center animated visible-false m-b-37\" data-appear=\"fadeInUp\">\n            New arrivals\n          </h2>\n\n          <div class=\"wrap-btn-slide1 w-size1 animated visible-false\" data-appear=\"zoomIn\">\n            <!-- Button -->\n            <a href=\"product.html\" class=\"flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4\">\n              Shop Now\n            </a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"item-slick1 item2-slick1\" style=\"background-image: url(assets/images/master-slide-03.jpg);\">\n        <div class=\"wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170\">\n          <span class=\"caption1-slide1 m-text1 t-center animated visible-false m-b-15\" data-appear=\"rollIn\">\n            Women Collection 2018\n          </span>\n\n          <h2 class=\"caption2-slide1 xl-text1 t-center animated visible-false m-b-37\" data-appear=\"lightSpeedIn\">\n            New arrivals\n          </h2>\n\n          <div class=\"wrap-btn-slide1 w-size1 animated visible-false\" data-appear=\"slideInUp\">\n            <!-- Button -->\n            <a href=\"product.html\" class=\"flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4\">\n              Shop Now\n            </a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"item-slick1 item3-slick1\" style=\"background-image: url(assets/images/master-slide-04.jpg);\">\n        <div class=\"wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170\">\n          <span class=\"caption1-slide1 m-text1 t-center animated visible-false m-b-15\" data-appear=\"rotateInDownLeft\">\n            Women Collection 2018\n          </span>\n\n          <h2 class=\"caption2-slide1 xl-text1 t-center animated visible-false m-b-37\" data-appear=\"rotateInUpRight\">\n            New arrivals\n          </h2>\n\n          <div class=\"wrap-btn-slide1 w-size1 animated visible-false\" data-appear=\"rotateIn\">\n            <!-- Button -->\n            <a href=\"product.html\" class=\"flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4\">\n              Shop Now\n            </a>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<!-- Banner -->\n<section class=\"banner bgwhite p-t-40 p-b-40\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-sm-10 col-md-8 col-lg-4 m-l-r-auto\">\n        <!-- block1 -->\n        <div class=\"block1 hov-img-zoom pos-relative m-b-30\">\n          <img src=\"assets/images/banner-02.jpg\" alt=\"IMG-BENNER\">\n\n          <div class=\"block1-wrapbtn w-size2\">\n            <!-- Button -->\n            <a href=\"#\" class=\"flex-c-m size2 m-text2 bg3 hov1 trans-0-4\">\n              Dresses\n            </a>\n          </div>\n        </div>\n\n        <!-- block1 -->\n        <div class=\"block1 hov-img-zoom pos-relative m-b-30\">\n          <img src=\"assets/images/banner-05.jpg\" alt=\"IMG-BENNER\">\n\n          <div class=\"block1-wrapbtn w-size2\">\n            <!-- Button -->\n            <a href=\"#\" class=\"flex-c-m size2 m-text2 bg3 hov1 trans-0-4\">\n              Sunglasses\n            </a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-sm-10 col-md-8 col-lg-4 m-l-r-auto\">\n        <!-- block1 -->\n        <div class=\"block1 hov-img-zoom pos-relative m-b-30\">\n          <img src=\"assets/images/banner-03.jpg\" alt=\"IMG-BENNER\">\n\n          <div class=\"block1-wrapbtn w-size2\">\n            <!-- Button -->\n            <a href=\"#\" class=\"flex-c-m size2 m-text2 bg3 hov1 trans-0-4\">\n              Watches\n            </a>\n          </div>\n        </div>\n\n        <!-- block1 -->\n        <div class=\"block1 hov-img-zoom pos-relative m-b-30\">\n          <img src=\"assets/images/banner-07.jpg\" alt=\"IMG-BENNER\">\n\n          <div class=\"block1-wrapbtn w-size2\">\n            <!-- Button -->\n            <a href=\"#\" class=\"flex-c-m size2 m-text2 bg3 hov1 trans-0-4\">\n              Footerwear\n            </a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-sm-10 col-md-8 col-lg-4 m-l-r-auto\">\n        <!-- block1 -->\n        <div class=\"block1 hov-img-zoom pos-relative m-b-30\">\n          <img src=\"assets/images/banner-04.jpg\" alt=\"IMG-BENNER\">\n\n          <div class=\"block1-wrapbtn w-size2\">\n            <!-- Button -->\n            <a href=\"#\" class=\"flex-c-m size2 m-text2 bg3 hov1 trans-0-4\">\n              Bags\n            </a>\n          </div>\n        </div>\n\n        <!-- block2 -->\n        <div class=\"block2 wrap-pic-w pos-relative m-b-30\">\n          <img src=\"assets/images/icons/bg-01.jpg\" alt=\"IMG\">\n\n          <div class=\"block2-content sizefull ab-t-l flex-col-c-m\">\n            <h4 class=\"m-text4 t-center w-size3 p-b-8\">\n              Sign up & get 20% off\n            </h4>\n\n            <p class=\"t-center w-size4\">\n              Be the frist to know about the latest fashion news and get exclu-sive offers\n            </p>\n\n            <div class=\"w-size2 p-t-25\">\n              <!-- Button -->\n              <a href=\"#\" class=\"flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4\">\n                Sign Up\n              </a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<!-- New Product -->\n<section class=\"newproduct bgwhite p-t-45 p-b-105\">\n  <div class=\"container\">\n    <div class=\"sec-title p-b-60\">\n      <h3 class=\"m-text5 t-center\">\n        Featured Products\n      </h3>\n    </div>\n\n    <!-- Slide2 -->\n    <div class=\"wrap-slick2\">\n      <div class=\"slick2\">\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelnew\">\n              <img src=\"assets/images/item-02.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Herschel supply co 25l\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $75.00\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n              <img src=\"assets/images/item-03.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Denim jacket blue\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $92.50\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n              <img src=\"assets/images/item-05.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Coach slim easton black\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $165.90\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelsale\">\n              <img src=\"assets/images/item-07.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Frayed denim shorts\n              </a>\n\n              <span class=\"block2-oldprice m-text7 p-r-5\">\n                $29.50\n              </span>\n\n              <span class=\"block2-newprice m-text8 p-r-5\">\n                $15.90\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelnew\">\n              <img src=\"assets/images/item-02.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Herschel supply co 25l\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $75.00\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n              <img src=\"assets/images/item-03.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Denim jacket blue\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $92.50\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n              <img src=\"assets/images/item-05.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Coach slim easton black\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $165.90\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelsale\">\n              <img src=\"assets/images/item-07.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Frayed denim shorts\n              </a>\n\n              <span class=\"block2-oldprice m-text7 p-r-5\">\n                $29.50\n              </span>\n\n              <span class=\"block2-newprice m-text8 p-r-5\">\n                $15.90\n              </span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n  </div>\n</section>\n\n<!-- Banner2 -->\n<section class=\"banner2 bg5 p-t-55 p-b-55\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15\">\n        <div class=\"hov-img-zoom pos-relative\">\n          <img src=\"assets/images/banner-08.jpg\" alt=\"IMG-BANNER\">\n\n          <div class=\"ab-t-l sizefull flex-col-c-m p-l-15 p-r-15\">\n            <span class=\"m-text9 p-t-45 fs-20-sm\">\n              The Beauty\n            </span>\n\n            <h3 class=\"l-text1 fs-35-sm\">\n              Lookbook\n            </h3>\n\n            <a href=\"#\" class=\"s-text4 hov2 p-t-20 \">\n              View Collection\n            </a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15\">\n        <div class=\"bgwhite hov-img-zoom pos-relative p-b-20per-ssm\">\n          <img src=\"assets/images/shop-item-09.jpg\" alt=\"IMG-BANNER\">\n\n          <div class=\"ab-t-l sizefull flex-col-c-b p-l-15 p-r-15 p-b-20\">\n            <div class=\"t-center\">\n              <a href=\"product-detail.html\" class=\"dis-block s-text3 p-b-5\">\n                Gafas sol Hawkers one\n              </a>\n\n              <span class=\"block2-oldprice m-text7 p-r-5\">\n                $29.50\n              </span>\n\n              <span class=\"block2-newprice m-text8\">\n                $15.90\n              </span>\n            </div>\n\n            <div class=\"flex-c-m p-t-44 p-t-30-xl\">\n              <div class=\"flex-col-c-m size3 bo1 m-l-5 m-r-5\">\n                <span class=\"m-text10 p-b-1 days\">\n                  69\n                </span>\n\n                <span class=\"s-text5\">\n                  days\n                </span>\n              </div>\n\n              <div class=\"flex-col-c-m size3 bo1 m-l-5 m-r-5\">\n                <span class=\"m-text10 p-b-1 hours\">\n                  04\n                </span>\n\n                <span class=\"s-text5\">\n                  hrs\n                </span>\n              </div>\n\n              <div class=\"flex-col-c-m size3 bo1 m-l-5 m-r-5\">\n                <span class=\"m-text10 p-b-1 minutes\">\n                  32\n                </span>\n\n                <span class=\"s-text5\">\n                  mins\n                </span>\n              </div>\n\n              <div class=\"flex-col-c-m size3 bo1 m-l-5 m-r-5\">\n                <span class=\"m-text10 p-b-1 seconds\">\n                  05\n                </span>\n\n                <span class=\"s-text5\">\n                  secs\n                </span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n\n<!-- Blog -->\n<section class=\"blog bgwhite p-t-94 p-b-65\">\n  <div class=\"container\">\n    <div class=\"sec-title p-b-52\">\n      <h3 class=\"m-text5 t-center\">\n        Our Blog\n      </h3>\n    </div>\n\n    <div class=\"row\">\n      <div class=\"col-sm-10 col-md-4 p-b-30 m-l-r-auto\">\n        <!-- Block3 -->\n        <div class=\"block3\">\n          <a href=\"blog-detail.html\" class=\"block3-img dis-block hov-img-zoom\">\n            <img src=\"assets/images/blog-01.jpg\" alt=\"IMG-BLOG\">\n          </a>\n\n          <div class=\"block3-txt p-t-14\">\n            <h4 class=\"p-b-7\">\n              <a href=\"blog-detail.html\" class=\"m-text11\">\n                Black Friday Guide: Best Sales & Discount Codes\n              </a>\n            </h4>\n\n            <span class=\"s-text6\">By</span> <span class=\"s-text7\">Nancy Ward</span>\n            <span class=\"s-text6\">on</span> <span class=\"s-text7\">July 22, 2017</span>\n\n            <p class=\"s-text8 p-t-16\">\n              Duis ut velit gravida nibh bibendum commodo. Sus-pendisse pellentesque mattis augue id euismod.\n              Inter-dum et malesuada fames\n            </p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-sm-10 col-md-4 p-b-30 m-l-r-auto\">\n        <!-- Block3 -->\n        <div class=\"block3\">\n          <a href=\"blog-detail.html\" class=\"block3-img dis-block hov-img-zoom\">\n            <img src=\"assets/images/blog-02.jpg\" alt=\"IMG-BLOG\">\n          </a>\n\n          <div class=\"block3-txt p-t-14\">\n            <h4 class=\"p-b-7\">\n              <a href=\"blog-detail.html\" class=\"m-text11\">\n                The White Sneakers Nearly Every Fashion Girls Own\n              </a>\n            </h4>\n\n            <span class=\"s-text6\">By</span> <span class=\"s-text7\">Nancy Ward</span>\n            <span class=\"s-text6\">on</span> <span class=\"s-text7\">July 18, 2017</span>\n\n            <p class=\"s-text8 p-t-16\">\n              Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus.\n              Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame\n            </p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-sm-10 col-md-4 p-b-30 m-l-r-auto\">\n        <!-- Block3 -->\n        <div class=\"block3\">\n          <a href=\"blog-detail.html\" class=\"block3-img dis-block hov-img-zoom\">\n            <img src=\"assets/images/blog-03.jpg\" alt=\"IMG-BLOG\">\n          </a>\n\n          <div class=\"block3-txt p-t-14\">\n            <h4 class=\"p-b-7\">\n              <a href=\"blog-detail.html\" class=\"m-text11\">\n                New York SS 2018 Street Style: Annina Mislin\n              </a>\n            </h4>\n\n            <span class=\"s-text6\">By</span> <span class=\"s-text7\">Nancy Ward</span>\n            <span class=\"s-text6\">on</span> <span class=\"s-text7\">July 2, 2017</span>\n\n            <p class=\"s-text8 p-t-16\">\n              Proin nec vehicula lorem, a efficitur ex. Nam vehicula nulla vel erat tincidunt, sed hendrerit ligula\n              porttitor. Fusce sit amet maximus nunc\n            </p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<!-- Instagram -->\n<section class=\"instagram p-t-20\">\n  <div class=\"sec-title p-b-52 p-l-15 p-r-15\">\n    <h3 class=\"m-text5 t-center\">\n      @ follow us on Instagram\n    </h3>\n  </div>\n\n  <div class=\"flex-w\">\n    <!-- Block4 -->\n    <div class=\"block4 wrap-pic-w\">\n      <img src=\"assets/images/gallery-03.jpg\" alt=\"IMG-INSTAGRAM\">\n\n      <a href=\"#\" class=\"block4-overlay sizefull ab-t-l trans-0-4\">\n        <span class=\"block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25\">\n          <i class=\"icon_heart_alt fs-20 p-r-12\" aria-hidden=\"true\"></i>\n          <span class=\"p-t-2\">39</span>\n        </span>\n\n        <div class=\"block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30\">\n          <p class=\"s-text10 m-b-15 h-size1 of-hidden\">\n            Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus.\n            Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.\n          </p>\n\n          <span class=\"s-text9\">\n            Photo by @nancyward\n          </span>\n        </div>\n      </a>\n    </div>\n\n    <!-- Block4 -->\n    <div class=\"block4 wrap-pic-w\">\n      <img src=\"assets/images/gallery-07.jpg\" alt=\"IMG-INSTAGRAM\">\n\n      <a href=\"#\" class=\"block4-overlay sizefull ab-t-l trans-0-4\">\n        <span class=\"block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25\">\n          <i class=\"icon_heart_alt fs-20 p-r-12\" aria-hidden=\"true\"></i>\n          <span class=\"p-t-2\">39</span>\n        </span>\n\n        <div class=\"block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30\">\n          <p class=\"s-text10 m-b-15 h-size1 of-hidden\">\n            Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus.\n            Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.\n          </p>\n\n          <span class=\"s-text9\">\n            Photo by @nancyward\n          </span>\n        </div>\n      </a>\n    </div>\n\n    <!-- Block4 -->\n    <div class=\"block4 wrap-pic-w\">\n      <img src=\"assets/images/gallery-09.jpg\" alt=\"IMG-INSTAGRAM\">\n\n      <a href=\"#\" class=\"block4-overlay sizefull ab-t-l trans-0-4\">\n        <span class=\"block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25\">\n          <i class=\"icon_heart_alt fs-20 p-r-12\" aria-hidden=\"true\"></i>\n          <span class=\"p-t-2\">39</span>\n        </span>\n\n        <div class=\"block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30\">\n          <p class=\"s-text10 m-b-15 h-size1 of-hidden\">\n            Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus.\n            Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.\n          </p>\n\n          <span class=\"s-text9\">\n            Photo by @nancyward\n          </span>\n        </div>\n      </a>\n    </div>\n\n    <!-- Block4 -->\n    <div class=\"block4 wrap-pic-w\">\n      <img src=\"assets/images/gallery-13.jpg\" alt=\"IMG-INSTAGRAM\">\n\n      <a href=\"#\" class=\"block4-overlay sizefull ab-t-l trans-0-4\">\n        <span class=\"block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25\">\n          <i class=\"icon_heart_alt fs-20 p-r-12\" aria-hidden=\"true\"></i>\n          <span class=\"p-t-2\">39</span>\n        </span>\n\n        <div class=\"block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30\">\n          <p class=\"s-text10 m-b-15 h-size1 of-hidden\">\n            Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus.\n            Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.\n          </p>\n\n          <span class=\"s-text9\">\n            Photo by @nancyward\n          </span>\n        </div>\n      </a>\n    </div>\n\n    <!-- Block4 -->\n    <div class=\"block4 wrap-pic-w\">\n      <img src=\"assets/images/gallery-15.jpg\" alt=\"IMG-INSTAGRAM\">\n\n      <a href=\"#\" class=\"block4-overlay sizefull ab-t-l trans-0-4\">\n        <span class=\"block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25\">\n          <i class=\"icon_heart_alt fs-20 p-r-12\" aria-hidden=\"true\"></i>\n          <span class=\"p-t-2\">39</span>\n        </span>\n\n        <div class=\"block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30\">\n          <p class=\"s-text10 m-b-15 h-size1 of-hidden\">\n            Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus.\n            Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.\n          </p>\n\n          <span class=\"s-text9\">\n            Photo by @nancyward\n          </span>\n        </div>\n      </a>\n    </div>\n  </div>\n</section>\n\n<!-- Shipping -->\n<section class=\"shipping bgwhite p-t-62 p-b-46\">\n  <div class=\"flex-w p-l-15 p-r-15\">\n    <div class=\"flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1\">\n      <h4 class=\"m-text12 t-center\">\n        Free Delivery Worldwide\n      </h4>\n\n      <a href=\"#\" class=\"s-text11 t-center\">\n        Click here for more info\n      </a>\n    </div>\n\n    <div class=\"flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2\">\n      <h4 class=\"m-text12 t-center\">\n        30 Days Return\n      </h4>\n\n      <span class=\"s-text11 t-center\">\n        Simply return it within 30 days for an exchange.\n      </span>\n    </div>\n\n    <div class=\"flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1\">\n      <h4 class=\"m-text12 t-center\">\n        Store Opening\n      </h4>\n\n      <span class=\"s-text11 t-center\">\n        Shop open from Monday to Sunday\n      </span>\n    </div>\n  </div>\n</section>\n"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_fire_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/database */ "./node_modules/@angular/fire/database/index.js");
+/* harmony import */ var _service_home_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../service/home.service */ "./src/app/service/home.service.ts");
+
+
+
+
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent(db, homeService) {
+        // const courses$: AngularFireList<any> = db.list('products');
+        // courses$.valueChanges().subscribe(
+        //   val => console.log(val)
+        // );
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-home',
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_database__WEBPACK_IMPORTED_MODULE_2__["AngularFireDatabase"], _service_home_service__WEBPACK_IMPORTED_MODULE_3__["HomeService"]])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/login/login.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/login/login.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/login/login.component.html":
+/*!********************************************!*\
+  !*** ./src/app/login/login.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Title Page -->\n<section class=\"bg-title-page p-t-40 p-b-50 flex-col-c-m\" style=\"background-color: #CCCCCC\">\n  <h2 class=\"l-text2 t-center\">\n    Contact\n  </h2>\n</section>\n\n<!-- content page -->\n<section class=\"bgwhite p-t-66 p-b-60\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-6 p-b-30\">\n        <div class=\"p-r-20 p-r-0-lg\">\n          <div class=\"contact-map size21\" id=\"google_map\" data-map-x=\"40.614439\" data-map-y=\"-73.926781\" data-pin=\"images/icons/icon-position-map.png\"\n            data-scrollwhell=\"0\" data-draggable=\"1\"></div>\n        </div>\n      </div>\n\n      <div class=\"col-md-6 p-b-30\">\n        <form class=\"leave-comment\">\n          <h4 class=\"m-text26 p-b-36 p-t-15\">\n            Send us your message\n          </h4>\n\n          <div class=\"bo4 of-hidden size15 m-b-20\">\n            <input class=\"sizefull s-text7 p-l-22 p-r-22\" type=\"text\" name=\"name\" placeholder=\"Full Name\">\n          </div>\n\n          <div class=\"bo4 of-hidden size15 m-b-20\">\n            <input class=\"sizefull s-text7 p-l-22 p-r-22\" type=\"text\" name=\"phone-number\" placeholder=\"Phone Number\">\n          </div>\n\n          <div class=\"bo4 of-hidden size15 m-b-20\">\n            <input class=\"sizefull s-text7 p-l-22 p-r-22\" type=\"text\" name=\"email\" placeholder=\"Email Address\">\n          </div>\n\n          <textarea class=\"dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20\" name=\"message\" placeholder=\"Message\"></textarea>\n\n          <div class=\"w-size25\">\n            <!-- Button -->\n            <button class=\"flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4\">\n              Send\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</section>\n"
+
+/***/ }),
+
+/***/ "./src/app/login/login.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/login/login.component.ts ***!
+  \******************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var LoginComponent = /** @class */ (function () {
+    function LoginComponent() {
+    }
+    LoginComponent.prototype.ngOnInit = function () {
+    };
+    LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-login',
+            template: __webpack_require__(/*! ./login.component.html */ "./src/app/login/login.component.html"),
+            styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], LoginComponent);
+    return LoginComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/model/product.ts":
+/*!**********************************!*\
+  !*** ./src/app/model/product.ts ***!
+  \**********************************/
+/*! exports provided: Product */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product", function() { return Product; });
+var Product = /** @class */ (function () {
+    function Product($key, url, price, size, color, quantity, type, image, categories, description, add_info, reviews, percent_discount, tags) {
+        this.$key = $key;
+        this.url = url;
+        this.price = price;
+        this.size = size;
+        this.color = color;
+        this.quantity = quantity;
+        this.type = type;
+        this.image = image;
+        this.categories = categories;
+        this.description = description;
+        this.add_info = add_info;
+        this.reviews = reviews;
+        this.percent_discount = percent_discount;
+        this.tags = tags;
+    }
+    Product.fromJson = function (_a) {
+        var $key = _a.$key, url = _a.url, price = _a.price, size = _a.size, color = _a.color, quantity = _a.quantity, type = _a.type, image = _a.image, categories = _a.categories, description = _a.description, add_info = _a.add_info, reviews = _a.reviews, percent_discount = _a.percent_discount, tags = _a.tags;
+        return new Product($key, url, price, size, color, quantity, type, image, categories, description, add_info, reviews, percent_discount, tags);
+    };
+    Product.fromJsonArray = function (json) {
+        return json.map(Product.fromJson);
+    };
+    return Product;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/product-detail/product-detail.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/product-detail/product-detail.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2R1Y3QtZGV0YWlsL3Byb2R1Y3QtZGV0YWlsLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/product-detail/product-detail.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/product-detail/product-detail.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- breadcrumb -->\n<div class=\"bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm\">\n  <a [routerLink]=\"['']\" class=\"s-text16\">\n    Home\n    <i class=\"fa fa-angle-right m-l-8 m-r-9\" aria-hidden=\"true\"></i>\n  </a>\n\n  <a href=\"\" class=\"s-text16\">\n    Women\n    <i class=\"fa fa-angle-right m-l-8 m-r-9\" aria-hidden=\"true\"></i>\n  </a>\n\n  <a href=\"\" class=\" s-text16\">\n    T-Shirt\n    <i class=\"fa fa-angle-right m-l-8 m-r-9\" aria-hidden=\"true\"></i>\n  </a>\n\n  <span class=\"s-text17\">\n    <!-- {{product$[5] | json}} -->\n  </span>\n</div>\n\n<!-- Product Detail -->\n<div class=\"container bgwhite p-t-35 p-b-80\">\n  <div class=\"flex-w flex-sb\">\n    <div class=\"w-size13 p-t-30 respon5\">\n      <div class=\"wrap-slick3 flex-sb flex-w\">\n        <div class=\"wrap-slick3-dots\"></div>\n\n        <div class=\"slick3\">\n          <div class=\"item-slick3\" data-thumb=\"assets/images/thumb-item-01.jpg\">\n            <div class=\"wrap-pic-w\">\n              <img src=\"assets/images/product-detail-01.jpg\" alt=\"IMG-PRODUCT\">\n            </div>\n          </div>\n\n          <div class=\"item-slick3\" data-thumb=\"assets/images/thumb-item-02.jpg\">\n            <div class=\"wrap-pic-w\">\n              <img src=\"assets/images/product-detail-02.jpg\" alt=\"IMG-PRODUCT\">\n            </div>\n          </div>\n\n          <div class=\"item-slick3\" data-thumb=\"assets/images/thumb-item-03.jpg\">\n            <div class=\"wrap-pic-w\">\n              <img src=\"assets/images/product-detail-03.jpg\" alt=\"IMG-PRODUCT\">\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"w-size14 p-t-30 respon5\">\n      <h4 class=\"product-detail-name m-text16 p-b-13\">\n        Boxy T-Shirt with Roll Sleeve Detail\n      </h4>\n\n      <span class=\"m-text17\">\n        $22\n      </span>\n\n      <p class=\"s-text8 p-t-10\">\n        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.\n      </p>\n\n      <!--  -->\n      <div class=\"p-t-33 p-b-60\">\n        <div class=\"flex-m flex-w p-b-10\">\n          <div class=\"s-text15 w-size15 t-center\">\n            Size\n          </div>\n\n          <div class=\"rs2-select2 rs3-select2 bo4 of-hidden w-size16\">\n            <select class=\"selection-2\" name=\"size\">\n              <option>Choose an option</option>\n              <option>Size S</option>\n              <option>Size M</option>\n              <option>Size L</option>\n              <option>Size XL</option>\n            </select>\n          </div>\n        </div>\n\n        <div class=\"flex-m flex-w\">\n          <div class=\"s-text15 w-size15 t-center\">\n            Color\n          </div>\n\n          <div class=\"rs2-select2 rs3-select2 bo4 of-hidden w-size16\">\n            <select class=\"selection-2\" name=\"color\">\n              <option>Choose an option</option>\n              <option>Gray</option>\n              <option>Red</option>\n              <option>Black</option>\n              <option>Blue</option>\n            </select>\n          </div>\n        </div>\n\n        <div class=\"flex-r-m flex-w p-t-10\">\n          <div class=\"w-size16 flex-m flex-w\">\n            <div class=\"flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10\">\n              <button class=\"btn-num-product-down color1 flex-c-m size7 bg8 eff2\">\n                <i class=\"fs-12 fa fa-minus\" aria-hidden=\"true\"></i>\n              </button>\n\n              <input class=\"size8 m-text18 t-center num-product\" type=\"number\" name=\"num-product\" value=\"1\">\n\n              <button class=\"btn-num-product-up color1 flex-c-m size7 bg8 eff2\">\n                <i class=\"fs-12 fa fa-plus\" aria-hidden=\"true\"></i>\n              </button>\n            </div>\n\n            <div class=\"btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10\">\n              <!-- Button -->\n              <button class=\"flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4\">\n                Add to Cart\n              </button>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"p-b-45\">\n        <span class=\"s-text8 m-r-35\">SKU: MUG-01</span>\n        <span class=\"s-text8\">Categories: Mug, Design</span>\n      </div>\n\n      <!--  -->\n      <div class=\"wrap-dropdown-content bo6 p-t-15 p-b-14 active-dropdown-content\">\n        <h5 class=\"js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4\">\n          Description\n          <i class=\"down-mark fs-12 color1 fa fa-minus dis-none\" aria-hidden=\"true\"></i>\n          <i class=\"up-mark fs-12 color1 fa fa-plus\" aria-hidden=\"true\"></i>\n        </h5>\n\n        <div class=\"dropdown-content dis-none p-t-15 p-b-23\">\n          <p class=\"s-text8\">\n            Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin\n            gravida arcu nisl, a dignissim mauris placerat\n          </p>\n        </div>\n      </div>\n\n      <div class=\"wrap-dropdown-content bo7 p-t-15 p-b-14\">\n        <h5 class=\"js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4\">\n          Additional information\n          <i class=\"down-mark fs-12 color1 fa fa-minus dis-none\" aria-hidden=\"true\"></i>\n          <i class=\"up-mark fs-12 color1 fa fa-plus\" aria-hidden=\"true\"></i>\n        </h5>\n\n        <div class=\"dropdown-content dis-none p-t-15 p-b-23\">\n          <p class=\"s-text8\">\n            Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin\n            gravida arcu nisl, a dignissim mauris placerat\n          </p>\n        </div>\n      </div>\n\n      <div class=\"wrap-dropdown-content bo7 p-t-15 p-b-14\">\n        <h5 class=\"js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4\">\n          Reviews (0)\n          <i class=\"down-mark fs-12 color1 fa fa-minus dis-none\" aria-hidden=\"true\"></i>\n          <i class=\"up-mark fs-12 color1 fa fa-plus\" aria-hidden=\"true\"></i>\n        </h5>\n\n        <div class=\"dropdown-content dis-none p-t-15 p-b-23\">\n          <p class=\"s-text8\">\n            Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin\n            gravida arcu nisl, a dignissim mauris placerat\n          </p>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<!-- Relate Product -->\n<section class=\"relateproduct bgwhite p-t-45 p-b-138\">\n  <div class=\"container\">\n    <div class=\"sec-title p-b-60\">\n      <h3 class=\"m-text5 t-center\">\n        Related Products\n      </h3>\n    </div>\n\n    <!-- Slide2 -->\n    <div class=\"wrap-slick2\">\n      <div class=\"slick2\">\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelnew\">\n              <img src=\"assets/images/item-02.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Herschel supply co 25l\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $75.00\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n              <img src=\"assets/images/item-03.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Denim jacket blue\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $92.50\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n              <img src=\"assets/images/item-05.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Coach slim easton black\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $165.90\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelsale\">\n              <img src=\"assets/images/item-07.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Frayed denim shorts\n              </a>\n\n              <span class=\"block2-oldprice m-text7 p-r-5\">\n                $29.50\n              </span>\n\n              <span class=\"block2-newprice m-text8 p-r-5\">\n                $15.90\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelnew\">\n              <img src=\"assets/images/item-02.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Herschel supply co 25l\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $75.00\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n              <img src=\"assets/images/item-03.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Denim jacket blue\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $92.50\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n              <img src=\"assets/images/item-05.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Coach slim easton black\n              </a>\n\n              <span class=\"block2-price m-text6 p-r-5\">\n                $165.90\n              </span>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"item-slick2 p-l-15 p-r-15\">\n          <!-- Block2 -->\n          <div class=\"block2\">\n            <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelsale\">\n              <img src=\"assets/images/item-07.jpg\" alt=\"IMG-PRODUCT\">\n\n              <div class=\"block2-overlay trans-0-4\">\n                <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                  <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                  <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                </a>\n\n                <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                  <!-- Button -->\n                  <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                    Add to Cart\n                  </button>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"block2-txt p-t-20\">\n              <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                Frayed denim shorts\n              </a>\n\n              <span class=\"block2-oldprice m-text7 p-r-5\">\n                $29.50\n              </span>\n\n              <span class=\"block2-newprice m-text8 p-r-5\">\n                $15.90\n              </span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n\n  </div>\n</section>\n"
+
+/***/ }),
+
+/***/ "./src/app/product-detail/product-detail.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/product-detail/product-detail.component.ts ***!
+  \************************************************************/
+/*! exports provided: ProductDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductDetailComponent", function() { return ProductDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _service_product_detail_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../service/product-detail.service */ "./src/app/service/product-detail.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_fire_database__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/fire/database */ "./node_modules/@angular/fire/database/index.js");
+/* harmony import */ var _model_product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../model/product */ "./src/app/model/product.ts");
+
+
+
+
+
+
+var ProductDetailComponent = /** @class */ (function () {
+    function ProductDetailComponent(route, db, productDetailService) {
+        this.db = db;
+        this.productDetailService = productDetailService;
+        this.productUrl = route.snapshot.params.id;
+        product: _model_product__WEBPACK_IMPORTED_MODULE_5__["Product"];
+    }
+    ProductDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.productDetailService.findProductDetailByUrl(this.productUrl)
+            .subscribe(function (pro) {
+            _this.productKey = pro[0].key;
+            // console.log('Key Products');
+            // console.log(this.productKey);
+            _this.productDetailService.getDetailsByKey(_this.productKey)
+                .subscribe(function (pro) {
+                _this.product$ = pro;
+                console.log(_this.product$);
+            });
+        });
+    };
+    ProductDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-product-detail',
+            template: __webpack_require__(/*! ./product-detail.component.html */ "./src/app/product-detail/product-detail.component.html"),
+            styles: [__webpack_require__(/*! ./product-detail.component.css */ "./src/app/product-detail/product-detail.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _angular_fire_database__WEBPACK_IMPORTED_MODULE_4__["AngularFireDatabase"],
+            _service_product_detail_service__WEBPACK_IMPORTED_MODULE_2__["ProductDetailService"]])
+    ], ProductDetailComponent);
+    return ProductDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/product/product.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/product/product.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2R1Y3QvcHJvZHVjdC5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/product/product.component.html":
+/*!************************************************!*\
+  !*** ./src/app/product/product.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Title Page -->\n<section class=\"bg-title-page p-t-50 p-b-40 flex-col-c-m\" style=\"background-image: url(assets/images/heading-pages-02.jpg);\">\n  <h2 class=\"l-text2 t-center\">\n    Women\n  </h2>\n  <p class=\"m-text13 t-center\">\n    New Arrivals Women Collection 2018\n  </p>\n</section>\n\n\n<!-- Content page -->\n<section class=\"bgwhite p-t-55 p-b-65\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-sm-6 col-md-4 col-lg-3 p-b-50\">\n        <div class=\"leftbar p-r-20 p-r-0-sm\">\n          <!--  -->\n          <h4 class=\"m-text14 p-b-7\">\n            Categories\n          </h4>\n\n          <ul class=\"p-b-54\">\n            <li class=\"p-t-4\">\n              <a href=\"#\" class=\"s-text13 active1\">\n                All\n              </a>\n            </li>\n\n            <li class=\"p-t-4\">\n              <a href=\"#\" class=\"s-text13\">\n                Women\n              </a>\n            </li>\n\n            <li class=\"p-t-4\">\n              <a href=\"#\" class=\"s-text13\">\n                Men\n              </a>\n            </li>\n\n            <li class=\"p-t-4\">\n              <a href=\"#\" class=\"s-text13\">\n                Kids\n              </a>\n            </li>\n\n            <li class=\"p-t-4\">\n              <a href=\"#\" class=\"s-text13\">\n                Accesories\n              </a>\n            </li>\n          </ul>\n\n          <!--  -->\n          <h4 class=\"m-text14 p-b-32\">\n            Filters\n          </h4>\n\n          <div class=\"filter-price p-t-22 p-b-50 bo3\">\n            <div class=\"m-text15 p-b-17\">\n              Price\n            </div>\n\n            <div class=\"wra-filter-bar\">\n              <div id=\"filter-bar\"></div>\n            </div>\n\n            <div class=\"flex-sb-m flex-w p-t-16\">\n              <div class=\"w-size11\">\n                <!-- Button -->\n                <button class=\"flex-c-m size4 bg7 bo-rad-15 hov1 s-text14 trans-0-4\">\n                  Filter\n                </button>\n              </div>\n\n              <div class=\"s-text3 p-t-10 p-b-10\">\n                Range: $<span id=\"value-lower\">610</span> - $<span id=\"value-upper\">980</span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"filter-color p-t-22 p-b-50 bo3\">\n            <div class=\"m-text15 p-b-12\">\n              Color\n            </div>\n\n            <ul class=\"flex-w\">\n              <li class=\"m-r-10\">\n                <input class=\"checkbox-color-filter\" id=\"color-filter1\" type=\"checkbox\" name=\"color-filter1\">\n                <label class=\"color-filter color-filter1\" for=\"color-filter1\"></label>\n              </li>\n\n              <li class=\"m-r-10\">\n                <input class=\"checkbox-color-filter\" id=\"color-filter2\" type=\"checkbox\" name=\"color-filter2\">\n                <label class=\"color-filter color-filter2\" for=\"color-filter2\"></label>\n              </li>\n\n              <li class=\"m-r-10\">\n                <input class=\"checkbox-color-filter\" id=\"color-filter3\" type=\"checkbox\" name=\"color-filter3\">\n                <label class=\"color-filter color-filter3\" for=\"color-filter3\"></label>\n              </li>\n\n              <li class=\"m-r-10\">\n                <input class=\"checkbox-color-filter\" id=\"color-filter4\" type=\"checkbox\" name=\"color-filter4\">\n                <label class=\"color-filter color-filter4\" for=\"color-filter4\"></label>\n              </li>\n\n              <li class=\"m-r-10\">\n                <input class=\"checkbox-color-filter\" id=\"color-filter5\" type=\"checkbox\" name=\"color-filter5\">\n                <label class=\"color-filter color-filter5\" for=\"color-filter5\"></label>\n              </li>\n\n              <li class=\"m-r-10\">\n                <input class=\"checkbox-color-filter\" id=\"color-filter6\" type=\"checkbox\" name=\"color-filter6\">\n                <label class=\"color-filter color-filter6\" for=\"color-filter6\"></label>\n              </li>\n\n              <li class=\"m-r-10\">\n                <input class=\"checkbox-color-filter\" id=\"color-filter7\" type=\"checkbox\" name=\"color-filter7\">\n                <label class=\"color-filter color-filter7\" for=\"color-filter7\"></label>\n              </li>\n            </ul>\n          </div>\n\n          <div class=\"search-product pos-relative bo4 of-hidden\">\n            <input class=\"s-text7 size6 p-l-23 p-r-50\" type=\"text\" name=\"search-product\" placeholder=\"Search Products...\">\n\n            <button class=\"flex-c-m size5 ab-r-m color2 color0-hov trans-0-4\">\n              <i class=\"fs-12 fa fa-search\" aria-hidden=\"true\"></i>\n            </button>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-sm-6 col-md-8 col-lg-9 p-b-50\">\n        <!--  -->\n        <div class=\"flex-sb-m flex-w p-b-35\">\n          <div class=\"flex-w\">\n            <div class=\"rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10\">\n              <select class=\"selection-2\" name=\"sorting\">\n                <option>Default Sorting</option>\n                <option>Popularity</option>\n                <option>Price: low to high</option>\n                <option>Price: high to low</option>\n              </select>\n            </div>\n\n            <div class=\"rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10\">\n              <select class=\"selection-2\" name=\"sorting\">\n                <option>Price</option>\n                <option>$0.00 - $50.00</option>\n                <option>$50.00 - $100.00</option>\n                <option>$100.00 - $150.00</option>\n                <option>$150.00 - $200.00</option>\n                <option>$200.00+</option>\n\n              </select>\n            </div>\n          </div>\n\n          <span class=\"s-text8 p-t-5 p-b-5\">\n            Showing 1–12 of 16 results\n          </span>\n        </div>\n\n        <!-- Product -->\n        <div class=\"row\">\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\" *ngFor=\"let product of products$\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelnew\">\n                <img src=\"assets/images/{{product.image}}\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a [routerLink]=\"['/product-detail/', product.url]\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  {{product.name}}\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  ${{product.price}}\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n                <img src=\"assets/images/item-03.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  END Denim jacket blue\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $92.50\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n                <img src=\"assets/images/item-05.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Coach slim easton black\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $165.90\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelsale\">\n                <img src=\"assets/images/item-07.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Frayed denim shorts\n                </a>\n\n                <span class=\"block2-oldprice m-text7 p-r-5\">\n                  $29.50\n                </span>\n\n                <span class=\"block2-newprice m-text8 p-r-5\">\n                  $15.90\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelnew\">\n                <img src=\"assets/images/item-01.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Herschel supply co 25l\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $75.00\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n                <img src=\"assets/images/item-14.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Denim jacket blue\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $92.50\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelnew\">\n                <img src=\"assets/images/item-06.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Herschel supply co 25l\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $75.00\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n                <img src=\"assets/images/item-08.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Denim jacket blue\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $92.50\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n                <img src=\"assets/images/item-10.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Coach slim easton black\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $165.90\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelsale\">\n                <img src=\"assets/images/item-11.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Frayed denim shorts\n                </a>\n\n                <span class=\"block2-oldprice m-text7 p-r-5\">\n                  $29.50\n                </span>\n\n                <span class=\"block2-newprice m-text8 p-r-5\">\n                  $15.90\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative block2-labelnew\">\n                <img src=\"assets/images/item-12.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Herschel supply co 25l\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $75.00\n                </span>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"col-sm-12 col-md-6 col-lg-4 p-b-50\">\n            <!-- Block2 -->\n            <div class=\"block2\">\n              <div class=\"block2-img wrap-pic-w of-hidden pos-relative\">\n                <img src=\"assets/images/item-15.jpg\" alt=\"IMG-PRODUCT\">\n\n                <div class=\"block2-overlay trans-0-4\">\n                  <a href=\"#\" class=\"block2-btn-addwishlist hov-pointer trans-0-4\">\n                    <i class=\"icon-wishlist icon_heart_alt\" aria-hidden=\"true\"></i>\n                    <i class=\"icon-wishlist icon_heart dis-none\" aria-hidden=\"true\"></i>\n                  </a>\n\n                  <div class=\"block2-btn-addcart w-size1 trans-0-4\">\n                    <!-- Button -->\n                    <button class=\"flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4\">\n                      Add to Cart\n                    </button>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"block2-txt p-t-20\">\n                <a href=\"product-detail.html\" class=\"block2-name dis-block s-text3 p-b-5\">\n                  Denim jacket blue\n                </a>\n\n                <span class=\"block2-price m-text6 p-r-5\">\n                  $92.50\n                </span>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <!-- Pagination -->\n        <div class=\"pagination flex-m flex-w p-t-26\">\n          <a href=\"#\" class=\"item-pagination flex-c-m trans-0-4 active-pagination\">1</a>\n          <a href=\"#\" class=\"item-pagination flex-c-m trans-0-4\">2</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+
+/***/ }),
+
+/***/ "./src/app/product/product.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/product/product.component.ts ***!
+  \**********************************************/
+/*! exports provided: ProductComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductComponent", function() { return ProductComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _service_product_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../service/product.service */ "./src/app/service/product.service.ts");
+/* harmony import */ var _angular_fire_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/database */ "./node_modules/@angular/fire/database/index.js");
+
+
+
+
+var ProductComponent = /** @class */ (function () {
+    function ProductComponent(db, productService) {
+        // const products$: AngularFireList<any> = db.list('products');
+        // products$.valueChanges().subscribe(val => {
+        //   console.log(val);
+        // }
+        // );
+        this.db = db;
+        this.productService = productService;
+    }
+    ProductComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.productService.findAllProducts()
+            .valueChanges()
+            .subscribe(function (pro) {
+            _this.products$ = pro;
+        });
+    };
+    ProductComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-product',
+            template: __webpack_require__(/*! ./product.component.html */ "./src/app/product/product.component.html"),
+            styles: [__webpack_require__(/*! ./product.component.css */ "./src/app/product/product.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_database__WEBPACK_IMPORTED_MODULE_3__["AngularFireDatabase"], _service_product_service__WEBPACK_IMPORTED_MODULE_2__["ProductService"]])
+    ], ProductComponent);
+    return ProductComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/service/home.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/service/home.service.ts ***!
+  \*****************************************/
+/*! exports provided: HomeService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeService", function() { return HomeService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var HomeService = /** @class */ (function () {
+    function HomeService() {
+        { // LOAD SCRIPS HOME
+            this.loadScript('../assets/vendor/jquery/jquery-3.2.1.min.js');
+            this.loadScript('../assets/js/add-cart.js');
+            this.loadScript('../assets/vendor/animsition/js/animsition.min.js');
+            this.loadScript('../assets/vendor/bootstrap/js/popper.js');
+            this.loadScript('../assets/vendor/bootstrap/js/bootstrap.min.js');
+            this.loadScript('../assets/vendor/select2/select2.min.js');
+            this.loadScript('../assets/vendor/slick/slick.min.js');
+            this.loadScript('../assets/js/slick-custom.js');
+            this.loadScript('../assets/vendor/countdowntime/countdowntime.js');
+            this.loadScript('../assets/vendor/lightbox2/js/lightbox.min.js');
+            this.loadScript('../assets/vendor/sweetalert/sweetalert.min.js');
+            this.loadScript('../assets/js/main.js');
+        }
+    }
+    HomeService.prototype.loadScript = function (url) {
+        var body = document.body;
+        var script = document.createElement('script');
+        script.innerHTML = '';
+        script.src = url;
+        script.async = false;
+        script.defer = true;
+        body.appendChild(script);
+    };
+    HomeService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root',
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], HomeService);
+    return HomeService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/service/product-detail.service.ts":
+/*!***************************************************!*\
+  !*** ./src/app/service/product-detail.service.ts ***!
+  \***************************************************/
+/*! exports provided: ProductDetailService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductDetailService", function() { return ProductDetailService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_fire_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/database */ "./node_modules/@angular/fire/database/index.js");
+
+
+
+var ProductDetailService = /** @class */ (function () {
+    function ProductDetailService(db) {
+        this.db = db;
+        { // LOAD SCRIPS PRODUCT-DETAILS
+            this.loadScript('../assets/vendor/jquery/jquery-3.2.1.min.js');
+            this.loadScript('../assets/js/add-cart.js');
+            this.loadScript('../assets/vendor/animsition/js/animsition.min.js');
+            this.loadScript('../assets/vendor/bootstrap/js/popper.js');
+            this.loadScript('../assets/vendor/bootstrap/js/bootstrap.min.js');
+            this.loadScript('../assets/vendor/select2/select2.min.js');
+            this.loadScript('../assets/js/select2-product-detail.js');
+            this.loadScript('../assets/vendor/slick/slick.min.js');
+            this.loadScript('../assets/js/slick-custom.js');
+            this.loadScript('../assets/vendor/sweetalert/sweetalert.min.js');
+            this.loadScript('../assets/js/main.js');
+        }
+    }
+    ProductDetailService.prototype.findProductDetailByUrl = function (productUrl) {
+        var _this = this;
+        var product = this.db.list('products', function (ref) { return ref.orderByChild('url').equalTo(productUrl); }).snapshotChanges();
+        product.subscribe(function (actions) {
+            actions.forEach(function (action) {
+                _this.productKey = action.key;
+                // console.log(this.productKey);
+                // console.log(action.payload.val());
+            });
+        });
+        return product;
+    };
+    ProductDetailService.prototype.getDetailsByKey = function (productKey) {
+        return this.db.object("products/" + productKey)
+            .valueChanges();
+    };
+    ProductDetailService.prototype.loadScript = function (url) {
+        var body = document.body;
+        var script = document.createElement('script');
+        script.innerHTML = '';
+        script.src = url;
+        script.async = false;
+        script.defer = true;
+        body.appendChild(script);
+    };
+    ProductDetailService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_database__WEBPACK_IMPORTED_MODULE_2__["AngularFireDatabase"]])
+    ], ProductDetailService);
+    return ProductDetailService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/service/product.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/service/product.service.ts ***!
+  \********************************************/
+/*! exports provided: ProductService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductService", function() { return ProductService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_fire_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/database */ "./node_modules/@angular/fire/database/index.js");
+
+
+
+var ProductService = /** @class */ (function () {
+    function ProductService(db) {
+        this.db = db;
+        { // Load Scripts
+            this.loadScript('../assets/vendor/jquery/jquery-3.2.1.min.js');
+            this.loadScript('../assets/js/add-cart.js');
+            this.loadScript('../assets/vendor/animsition/js/animsition.min.js');
+            this.loadScript('../assets/vendor/bootstrap/js/popper.js');
+            this.loadScript('../assets/vendor/bootstrap/js/bootstrap.min.js');
+            this.loadScript('../assets/vendor/select2/select2.min.js');
+            this.loadScript('../assets/js/select2-all.js');
+            this.loadScript('../assets/vendor/daterangepicker/moment.min.js');
+            this.loadScript('../assets/vendor/daterangepicker/daterangepicker.js');
+            this.loadScript('../assets/vendor/slick/slick.min.js');
+            this.loadScript('../assets/js/slick-custom.js');
+            this.loadScript('../assets/vendor/sweetalert/sweetalert.min.js');
+            this.loadScript('../assets/vendor/noui/nouislider.min.js');
+            this.loadScript('../assets/js/nouislider.js');
+            this.loadScript('../assets/js/main.js');
+        }
+    }
+    ProductService.prototype.findAllProducts = function () {
+        this.products$ = this.db.list('products');
+        // // Use snapshotChanges().map() to store the key
+        // this.products = this.productRef.snapshotChanges().pipe(map(changes => {
+        //   return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
+        // }));
+        // return this.products.subscribe(val => console.log(val));
+        return this.db.list('products');
+    };
+    ProductService.prototype.loadScript = function (url) {
+        var body = document.body;
+        var script = document.createElement('script');
+        script.innerHTML = '';
+        script.src = url;
+        script.async = false;
+        script.defer = true;
+        body.appendChild(script);
+    };
+    ProductService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_database__WEBPACK_IMPORTED_MODULE_2__["AngularFireDatabase"]])
+    ], ProductService);
+    return ProductService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+var environment = {
+    production: false,
+    firebase: {
+        apiKey: "AIzaSyCDPPMUNk6a5DSjJEG7vDk0tvryOKVtkPQ",
+        authDomain: "angular-firebase-fashe-store.firebaseapp.com",
+        databaseURL: "https://angular-firebase-fashe-store.firebaseio.com",
+        projectId: "angular-firebase-fashe-store",
+        storageBucket: "angular-firebase-fashe-store.appspot.com",
+        messagingSenderId: "144477477647"
+    }
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(function (err) { return console.error(err); });
+
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0 ./src/main.ts ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! D:\STUDY\Web Frontend\angular-firebase-fashe-store\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0 */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0");
+module.exports = __webpack_require__(/*! D:\STUDY\Web Frontend\angular-firebase-fashe-store\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map

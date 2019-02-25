@@ -11,3 +11,10 @@ $('.block2-btn-addwishlist').each(function () {
     swal(nameProduct, "is added to wishlist !", "success");
   });
 });
+
+$('.btn-addcart-product-detail').each(function () {
+  var nameProduct = $('.product-detail-name').html();
+  $(this).on('click', function () {
+    swal(nameProduct, "is added to wishlist !", "success");
+  });
+});
