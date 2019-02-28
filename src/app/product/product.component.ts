@@ -29,6 +29,8 @@ export class ProductComponent implements OnInit {
       .subscribe(pro => {
         this.products$ = pro;
       });
+    console.log(this.products$);
+
   }
 
 }

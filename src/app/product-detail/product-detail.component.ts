@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
 import { Product } from '../model/product';
 import { Observable } from 'rxjs';
+import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
@@ -17,14 +18,18 @@ export class ProductDetailComponent implements OnInit {
 
   productKey: string;
 
+  product_quantity = new FormControl('');
+
+
+
   constructor(
-    route: ActivatedRoute,
+    private route: ActivatedRoute,
     private db: AngularFireDatabase,
     private productDetailService: ProductDetailService) {
 
     this.productUrl = route.snapshot.params.id;
 
-    product : Product;
+    product: Product;
   }
 
   ngOnInit() {
@@ -41,6 +46,21 @@ export class ProductDetailComponent implements OnInit {
             console.log(this.product$);
           });
       });
+    this.product_quantity.setValue(0);
+    console.log(this.product_quantity.value);
+
+
   }
+
+  addQuantity() {
+    this.product_quantity.setValue(this.product_quantity.value + 1);
+  }
+
+  minusQuantity() {
+    this.product_quantity.setValue(this.product_quantity.value - 1);
+  }
+
+
+
 
 }

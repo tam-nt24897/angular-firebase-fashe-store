@@ -15,6 +15,8 @@ export class ProductDetailService {
 
   dataStr: string;
 
+  products: AngularFireList<any> = null; //  list of objects
+
 
   constructor(private db: AngularFireDatabase) {
 
@@ -38,6 +40,13 @@ export class ProductDetailService {
 
   }
 
+  // Update an existing post
+  updateProduct(key: string, value: any): void {
+    this.products.update(key, value)
+      .catch(error => this.handleError(error))
+  }
+
+
   findProductDetailByUrl(productUrl: string) {
 
     const product = this.db.list('products', ref => ref.orderByChild('url').equalTo(productUrl)).snapshotChanges();
@@ -58,6 +67,27 @@ export class ProductDetailService {
     return this.db.object(`products/${productKey}`)
       .valueChanges();
 
+  }
+
+  getAllCategories() {
+    return this.db.list('categories').valueChanges();
+  }
+
+  getAllColors() {
+    return this.db.list('color').valueChanges();
+  }
+
+  getAllTypes() {
+    return this.db.list('type').valueChanges();
+  }
+
+  getAllSizes() {
+    return this.db.list('size').valueChanges();
+  }
+
+  // Default error handling for all actions
+  private handleError(error) {
+    console.log(error)
   }
 
   public loadScript(url: string) {

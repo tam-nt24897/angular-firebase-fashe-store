@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,14 @@ import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { Product } from './model/product';
 import { LoginComponent } from './login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StorageServiceModule } from 'angular-webstorage-service';
+import { TopMenuComponent } from './top-menu/top-menu.component';
+import { TopMenuService } from './service/top-menu.service';
+import { RegisterComponent } from './register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardService } from './service/dashboard.service';
+import { DashboardProductEditComponent } from './dashboard-product-edit/dashboard-product-edit.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +29,11 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ProductComponent,
     ProductDetailComponent,
-    LoginComponent
+    LoginComponent,
+    TopMenuComponent,
+    RegisterComponent,
+    DashboardComponent,
+    DashboardProductEditComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,8 +41,11 @@ import { FormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    StorageServiceModule,
   ],
-  providers: [HomeService, ProductService],
+  providers: [HomeService, ProductService, TopMenuService, DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

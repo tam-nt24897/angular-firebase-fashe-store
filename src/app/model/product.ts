@@ -11,7 +11,7 @@ export class Product {
         public quantity: number,
         public type: string,
         public image: string,
-        public categories: Array<string>,
+        public categories: string,
         public description: string,
         public add_info: string,
         public reviews: Array<string>,

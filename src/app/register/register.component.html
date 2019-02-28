@@ -1,7 +1,7 @@
 <!-- Title Page -->
 <section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-color: #CCCCCC">
   <h2 class="l-text2 t-center">
-    Login
+    Register
   </h2>
 </section>
 
@@ -20,12 +20,12 @@
       <div class="col-md-6 p-b-30">
         <form class="leave-comment">
           <h4 class="m-text26 p-b-36 p-t-15">
-            Login 
+            Register
           </h4>
 
           <div class="bo4 of-hidden size15 m-b-20">
             <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="email" placeholder="Email" [(ngModel)]="email"
-              required #emailUser="ngModel">
+              required #emailUser="ngModel"  (keyup)="checkEmailExist($event)">
           </div>
 
           <div [hidden]="emailUser.valid || emailUser.pristine" class="alert alert-danger">
@@ -34,15 +34,24 @@
 
           <div class="bo4 of-hidden size15 m-b-20">
             <input class="sizefull s-text7 p-l-22 p-r-22" type="password" name="password" [(ngModel)]="password"
-              placeholder="Password" required #passwordUser="ngModel">
+              placeholder="Password" required #passwordUser="ngModel" (keyup)="checkPassword($event)">
           </div>
 
           <div [hidden]="passwordUser.valid || passwordUser.pristine" class="alert alert-danger">
             Password is required
           </div>
 
+          <div class="bo4 of-hidden size15 m-b-20">
+            <input class="sizefull s-text7 p-l-22 p-r-22" type="password" name="repassword" [(ngModel)]="repassword"
+              placeholder="Re-Password" required #repasswordUser="ngModel" (keyup)="checkRepassword($event)">
+          </div>
+
+          <div [hidden]="repasswordUser.valid || repasswordUser.pristine" class="alert alert-danger">
+            Re-Password is required
+          </div>
+
           <div *ngIf="newMessage" class="alert alert-danger">
-            {{message}} 
+            {{message}}
           </div>
 
           <!-- <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="message" placeholder="Message"></textarea> -->
@@ -51,15 +60,15 @@
 
             <!-- Button -->
             <button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4" (click)="onSubmit()">
-              Login
+              Register
             </button>
           </div>
           <div class="w-size25">
 
             <hr>
             <!-- Button -->
-            <button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4" (click)="navigateRegister()">
-              Register
+            <button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4" (click)="navigateLogin()">
+              Login
             </button>
           </div>
         </form>

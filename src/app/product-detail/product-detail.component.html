@@ -6,17 +6,17 @@
   </a>
 
   <a href="" class="s-text16">
-    Women
+    {{ product$?.categories }}
     <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
   </a>
 
   <a href="" class=" s-text16">
-    T-Shirt
+    {{ product$?.type }}
     <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
   </a>
 
   <span class="s-text17">
-    {{product$ | json}}
+    {{product$?.name}}
   </span>
 </div>
 
@@ -28,9 +28,9 @@
         <div class="wrap-slick3-dots"></div>
 
         <div class="slick3">
-          <div class="item-slick3" data-thumb="assets/images/thumb-item-01.jpg">
+          <div class="item-slick3" data-thumb="assets/images/thumb-item-02.jpg">
             <div class="wrap-pic-w">
-              <img src="assets/images/product-detail-01.jpg" alt="IMG-PRODUCT">
+              <img src="assets/images/{{ product$?.image  }}" alt="IMG-PRODUCT">
             </div>
           </div>
 
@@ -55,11 +55,11 @@
       </h4>
 
       <span class="m-text17">
-        $22
+        ${{ product$?.price }}
       </span>
 
       <p class="s-text8 p-t-10">
-        Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+        {{ product$?.description }}
       </p>
 
       <!--  -->
@@ -70,16 +70,13 @@
           </div>
 
           <div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
-            <select class="selection-2" name="size">
-              <option>Choose an option</option>
-              <option>Size S</option>
-              <option>Size M</option>
-              <option>Size L</option>
-              <option>Size XL</option>
+            <select class="selection-2" name="size" required>
+              <option value="">Choose an option</option>
+              <option *ngFor="let item of product$?.size" value="{{item}}">Size {{item}}</option>
+
             </select>
           </div>
         </div>
-
         <div class="flex-m flex-w">
           <div class="s-text15 w-size15 t-center">
             Color
@@ -88,10 +85,8 @@
           <div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16">
             <select class="selection-2" name="color">
               <option>Choose an option</option>
-              <option>Gray</option>
-              <option>Red</option>
-              <option>Black</option>
-              <option>Blue</option>
+              <option *ngFor="let item of product$?.color">{{item}}</option>
+
             </select>
           </div>
         </div>
@@ -99,13 +94,14 @@
         <div class="flex-r-m flex-w p-t-10">
           <div class="w-size16 flex-m flex-w">
             <div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
-              <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+              <button class=" color1 flex-c-m size7 bg8 eff2" (click)="minusQuantity()">
                 <i class="fs-12 fa fa-minus" aria-hidden="true"></i>
               </button>
 
-              <input class="size8 m-text18 t-center num-product" type="number" name="num-product" value="1">
+              <input [formControl]="product_quantity" class="size8 m-text18 t-center num-product" type="number" name="num-product"
+                value="{{product_quantity.value}}">
 
-              <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+              <button class=" color1 flex-c-m size7 bg8 eff2" (click)="addQuantity()">
                 <i class="fs-12 fa fa-plus" aria-hidden="true"></i>
               </button>
             </div>
@@ -122,7 +118,7 @@
 
       <div class="p-b-45">
         <span class="s-text8 m-r-35">SKU: MUG-01</span>
-        <span class="s-text8">Categories: Mug, Design</span>
+        <span class="s-text8">Categories: {{ product$?.categories }}</span>
       </div>
 
       <!--  -->
@@ -135,8 +131,7 @@
 
         <div class="dropdown-content dis-none p-t-15 p-b-23">
           <p class="s-text8">
-            Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin
-            gravida arcu nisl, a dignissim mauris placerat
+            {{ product$?.description }}
           </p>
         </div>
       </div>
@@ -150,8 +145,7 @@
 
         <div class="dropdown-content dis-none p-t-15 p-b-23">
           <p class="s-text8">
-            Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin
-            gravida arcu nisl, a dignissim mauris placerat
+            {{ product$?.add_info }}
           </p>
         </div>
       </div>
@@ -164,9 +158,8 @@
         </h5>
 
         <div class="dropdown-content dis-none p-t-15 p-b-23">
-          <p class="s-text8">
-            Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin
-            gravida arcu nisl, a dignissim mauris placerat
+          <p class="s-text8" *ngFor="let item of product$?.reviews">
+            {{ item?.description }} - <strong> {{ item?.id_user }}</strong>
           </p>
         </div>
       </div>

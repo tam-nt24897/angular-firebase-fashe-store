@@ -1,0 +1,169 @@
+<!-- content page -->
+<section class="bgwhite p-t-66 p-b-60">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 p-b-30">
+        <div class="p-r-20 p-r-0-lg">
+          <div class="contact-map size21">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-b-30">
+        <div class="p-r-20 p-r-0-lg">
+          <div class="contact-map size21">
+            <form class="leave-comment">
+              <h4 class="m-text26 p-b-36 p-t-15">
+                Details of product
+              </h4>
+              <label for="name">Product Name</label>
+              <div class="bo4 of-hidden size15 m-b-20">
+                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name" placeholder="Input product name"
+                  [(ngModel)]="productName" required #prodName="ngModel">
+              </div>
+
+              <div [hidden]="prodName.valid || prodName.pristine" class="alert alert-danger">
+                Product Name is required
+              </div>
+
+              <label for="url">Product Url</label>
+              <div class="bo4 of-hidden size15 m-b-20">
+                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="url" placeholder="Input product url"
+                  [(ngModel)]="productUrl" required #prodUrl="ngModel">
+              </div>
+
+              <div [hidden]="prodUrl.valid || prodUrl.pristine" class="alert alert-danger">
+                Product Url is required
+              </div>
+
+              <label for="categories">Categories</label>
+              <select class="form-control bo4 of-hidden size15 m-b-20" type="text" name="categories" [(ngModel)]="productCategories"
+                required>
+                <option>Categories select</option>
+                <option *ngFor="let category of categories$" [value]="category.name">{{category?.name}}</option>
+              </select>
+
+              <label for="color">Color</label>
+              <select class="form-control bo4 of-hidden size15 m-b-20" name="color" [(ngModel)]="productColor">
+                <option>Color select</option>
+                <option *ngFor="let color of colors$" [value]="color.name">{{color?.name}}</option>
+              </select>
+
+              <label for="type">Type</label>
+              <select class="form-control bo4 of-hidden size15 m-b-20" name="type" [(ngModel)]="productType">
+                <option>Type select</option>
+                <option *ngFor="let type of types$" [value]="type.name">{{type?.name}}</option>
+
+              </select>
+
+              <label for="size">Size</label>
+              <select class="form-control bo4 of-hidden size15 m-b-20" name="size" [(ngModel)]="productSize">
+                <option>Size select</option>
+                <option *ngFor="let size of sizes$" [value]="size.name">{{size?.name}}</option>
+              </select>
+
+
+              <label for="description">Description</label>
+              <div class="of-hidden m-b-20">
+                <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="description"
+                  placeholder="Input description" [(ngModel)]="productDescription" required #prodDescription="ngModel"></textarea>
+              </div>
+
+              <div [hidden]="prodDescription.valid || prodDescription.pristine" class="alert alert-danger">
+                Description is required
+              </div>
+
+              <label for="add_info">Additional information</label>
+              <div class="of-hidden m-b-20">
+                <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="add_info" placeholder="Input additional information"
+                  [(ngModel)]="productAddInfo" required #prodAddInfo="ngModel"></textarea>
+              </div>
+
+              <div [hidden]="prodAddInfo.valid || prodAddInfo.pristine" class="alert alert-danger">
+                Additional information is required
+              </div>
+
+              <label for="percent_discount">Percent discount</label>
+              <div class="bo4 of-hidden size15 m-b-20">
+                <input class="sizefull s-text7 p-l-22 p-r-22" type="number" name="percent_discount" placeholder="Input percent discount"
+                  [(ngModel)]="productPercentDiscount" required #prodPercentDiscount="ngModel">
+              </div>
+
+              <div [hidden]="prodPercentDiscount.valid || prodPercentDiscount.pristine" class="alert alert-danger">
+                Percent discount is required
+              </div>
+
+              <label for="price">Price</label>
+              <div class="bo4 of-hidden size15 m-b-20">
+                <input class="sizefull s-text7 p-l-22 p-r-22" type="number" name="price" placeholder="Input price"
+                  [(ngModel)]="productPrice" required #prodPrice="ngModel">
+              </div>
+
+              <div [hidden]="prodPrice.valid || prodPrice.pristine" class="alert alert-danger">
+                Price is required
+              </div>
+
+              <label for="quantity">Quantity</label>
+              <div class="bo4 of-hidden size15 m-b-20">
+                <input class="sizefull s-text7 p-l-22 p-r-22" type="number" name="quantity" placeholder="Input quantity"
+                  [(ngModel)]="productQuantity" required #prodQuantity="ngModel">
+              </div>
+
+              <div [hidden]="prodQuantity.valid || prodQuantity.pristine" class="alert alert-danger">
+                Quantity is required
+              </div>
+
+              <label for="tags">Tags</label>
+              <div class="bo4 of-hidden size15 m-b-20">
+                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="tags" placeholder="Input tags"
+                  [(ngModel)]="productTags" required #prodTags="ngModel">
+              </div>
+
+              <div [hidden]="prodTags.valid || prodTags.pristine" class="alert alert-danger">
+                Tags is required
+              </div>
+
+              <label for="image">Image</label>
+              <div class="bo4 of-hidden size15 m-b-20">
+                <input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="image" placeholder="Input image"
+                  [(ngModel)]="productImage" required #prodImage="ngModel">
+              </div>
+
+              <div [hidden]="prodImage.valid || prodImage.pristine" class="alert alert-danger">
+                Image is required
+              </div>
+
+              <div *ngIf="newMessage" class="alert alert-danger">
+                {{message}}
+              </div>
+
+              <!-- <textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="message" placeholder="Message"></textarea> -->
+
+              <div class="w-size25">
+
+                <!-- Button -->
+                <button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4" (click)="onUpdate()">
+                  Save
+                </button>
+              </div>
+              <div class="w-size25">
+
+                <hr>
+                <!-- Button -->
+                <button class="flex-c-m size2 bo-rad-23 hov1 m-text3 trans-0-4 btn btn-danger">
+                  Delete
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 p-b-30">
+        <div class="p-r-20 p-r-0-lg">
+          <div class="contact-map size21">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
