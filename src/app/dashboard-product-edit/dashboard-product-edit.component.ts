@@ -6,7 +6,7 @@ import { Category } from '../model/category';
 import { Color } from '../model/color';
 import { Size } from '../model/Size';
 import { FormControl } from '@angular/forms';
-import { AngularFireDatabase } from '@angular/fire/database';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 
 @Component({
   selector: 'app-dashboard-product-edit',
@@ -14,6 +14,8 @@ import { AngularFireDatabase } from '@angular/fire/database';
   styleUrls: ['./dashboard-product-edit.component.css']
 })
 export class DashboardProductEditComponent implements OnInit {
+
+  productRef: AngularFireList<any> = null;
 
   product$: any;
   categories$: any;
@@ -57,8 +59,8 @@ export class DashboardProductEditComponent implements OnInit {
     private productDetailService: ProductDetailService
   ) {
 
+    this.productRef = this.db.list('products');
     this.productUrl = route.snapshot.params.id;
-
   }
 
   ngOnInit() {
@@ -144,6 +146,24 @@ export class DashboardProductEditComponent implements OnInit {
     this.db.object(`/products/${this.productKey}`).update(this.product$);
 
     this.router.navigate(['/dashboard']);
+  }
+
+  onDelete() {
+    // promise1 = new Promise(function(resolve, reject) {
+    //   resolve('Success!');
+    // });
+    this.productRef.remove(this.productKey)
+      .catch(
+        function error(arg) {
+          alert('Remove Error: ' + arg);
+        }
+      )
+      .then(
+        function success() {
+          alert('Remove Success!!!');
+          // this.router.navigate(['/dashboard']);
+        }
+      );
   }
 
 }

@@ -46,6 +46,12 @@ export class ProductDetailService {
       .catch(error => this.handleError(error))
   }
 
+  // Deletes a single post
+  deleteProduct(key: string): void {
+    this.products.remove(key)
+      .catch(error => this.handleError(error))
+  }
+
 
   findProductDetailByUrl(productUrl: string) {
 

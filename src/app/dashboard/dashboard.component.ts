@@ -13,6 +13,15 @@ export class DashboardComponent implements OnInit {
 
   productsDash$: any;
   productsSum: any;
+  productSearch: any;
+
+  textSearch: string;
+
+  allProducts: Product[];
+  filteredProduct: Product[];
+
+  filteredItems: any;
+  items: any;
 
   constructor(
     private dashboardService: DashboardService
@@ -24,10 +33,17 @@ export class DashboardComponent implements OnInit {
       .valueChanges()
       .subscribe(pro => {
         this.productsDash$ = pro;
+        this.filteredProduct = pro;
+        this.allProducts = pro;
         console.log();
       });
 
+  }
 
+  search(value) {
+    this.textSearch = value;
+    this.filteredProduct = this.allProducts.filter(product => product.name.includes(this.textSearch));
+    // console.log(this.textSearch);
   }
 
 }

@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardProductEditComponent } from './dashboard-product-edit/dashboard-product-edit.component';
+import { DashboardProductCreateComponent } from './dashboard-product-create/dashboard-product-create.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'dashboard/edit/:id',
     component: DashboardProductEditComponent
+  },
+  {
+    path: 'dashboard/create',
+    component: DashboardProductCreateComponent
   },
   { path: '**', component: HomeComponent }
 ];

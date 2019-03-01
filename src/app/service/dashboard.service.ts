@@ -14,7 +14,7 @@ export class DashboardService {
   ) { }
 
 
-  findAllProducts() {
+  findAllProducts(): AngularFireList<Product> {
     return this.db.list('products');
   }
 }

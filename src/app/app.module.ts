@@ -22,6 +22,7 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardService } from './service/dashboard.service';
 import { DashboardProductEditComponent } from './dashboard-product-edit/dashboard-product-edit.component';
+import { DashboardProductCreateComponent } from './dashboard-product-create/dashboard-product-create.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { DashboardProductEditComponent } from './dashboard-product-edit/dashboar
     RegisterComponent,
     DashboardComponent,
     DashboardProductEditComponent,
+    DashboardProductCreateComponent,
   ],
   imports: [
     BrowserModule,
