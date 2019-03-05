@@ -14,7 +14,7 @@ export class Product {
         public categories: string,
         public description: string,
         public add_info: string,
-        public reviews: Array<string>,
+        public reviews: any,
         public percent_discount: number,
         public tags: string
     ) {

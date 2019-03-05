@@ -20,7 +20,7 @@ export class ProductComponent implements OnInit {
 
   }
 
-  products$: Product[];
+  products$: any;
 
   ngOnInit() {
 
@@ -28,8 +28,9 @@ export class ProductComponent implements OnInit {
       .valueChanges()
       .subscribe(pro => {
         this.products$ = pro;
+        console.log(this.products$);
+
       });
-    console.log(this.products$);
 
   }
 

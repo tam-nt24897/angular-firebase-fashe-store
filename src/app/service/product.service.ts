@@ -16,7 +16,8 @@ export class ProductService {
       this.loadScript('../assets/vendor/bootstrap/js/popper.js');
       this.loadScript('../assets/vendor/bootstrap/js/bootstrap.min.js');
       this.loadScript('../assets/vendor/select2/select2.min.js');
-      this.loadScript('../assets/js/select2-all.js');
+      this.loadScript('../assets/js/select2.js');
+      this.loadScript('../assets/js/select2-product-detail.js');
       this.loadScript('../assets/vendor/daterangepicker/moment.min.js');
       this.loadScript('../assets/vendor/daterangepicker/daterangepicker.js');
 
@@ -31,11 +32,11 @@ export class ProductService {
   }
 
 
-  products$: AngularFireList<Product>;
+  products$: AngularFireObject<Product>;
 
-  findAllProducts(): AngularFireList<Product> {
+  findAllProducts(): AngularFireObject<Product> {
 
-    this.products$ = this.db.list('products');
+    this.products$ = this.db.object('products');
     // // Use snapshotChanges().map() to store the key
     // this.products = this.productRef.snapshotChanges().pipe(map(changes => {
     //   return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
@@ -43,7 +44,7 @@ export class ProductService {
 
     // return this.products.subscribe(val => console.log(val));
 
-    return this.db.list('products');
+    return this.db.object('products');
   }
 
 

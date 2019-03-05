@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardProductEditComponent } from './dashboard-product-edit/dashboard-product-edit.component';
 import { DashboardProductCreateComponent } from './dashboard-product-create/dashboard-product-create.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,14 @@ const routes: Routes = [
   {
     path: 'dashboard/create',
     component: DashboardProductCreateComponent
+  },
+  {
+    path: 'cart',
+    component: CartComponent
+  },
+  {
+    path: 'cart/:id',
+    component: CartComponent
   },
   { path: '**', component: HomeComponent }
 ];

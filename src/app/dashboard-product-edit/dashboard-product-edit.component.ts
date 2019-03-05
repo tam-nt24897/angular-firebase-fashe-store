@@ -46,10 +46,11 @@ export class DashboardProductEditComponent implements OnInit {
   productQuantity: number;
   productTags: string;
   productImage: string = "item-02.jpg";
-  productReviews: string[] = [
-    this.id_user = "1",
-    this.description = "Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat"
-  ]
+  productReviews: any =
+    [{
+      id_user: "1",
+      description: "Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat"
+    }]
   //Product Edit
 
   constructor(
