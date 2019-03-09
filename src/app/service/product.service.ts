@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
 import { Product } from '../model/product';
 import { map } from 'rxjs/operators';
+import { query } from '@angular/core/src/render3';
+import { Color } from '../model/color';
 
 @Injectable({
   providedIn: 'root'
@@ -34,6 +36,16 @@ export class ProductService {
 
   products$: AngularFireObject<Product>;
 
+
+
+  sortProductLowToHigh() {
+    return this.db.list('products', ref => ref.orderByChild('price').limitToFirst(50));
+  }
+
+  sortProductHighToLow() {
+    return this.db.list('products', ref => ref.orderByChild('price').limitToLast(50));
+  }
+
   findAllProducts(): AngularFireObject<Product> {
 
     this.products$ = this.db.object('products');
@@ -45,6 +57,14 @@ export class ProductService {
     // return this.products.subscribe(val => console.log(val));
 
     return this.db.object('products');
+  }
+
+  getColors(): AngularFireList<Color> {
+    return this.db.list('color');
+  }
+
+  findProductByCategory(category: string) {
+    return this.db.list('products', ref => ref.orderByChild('categories').equalTo(category));
   }
 
 

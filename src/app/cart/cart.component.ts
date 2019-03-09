@@ -6,6 +6,7 @@ import { Item } from '../model/item';
 import { ProductDetailService } from '../service/product-detail.service';
 import { Size } from '../model/Size';
 import { Color } from '../model/color';
+import { Product } from '../model/product';
 
 @Component({
   selector: 'app-cart',
@@ -25,6 +26,7 @@ export class CartComponent implements OnInit {
   productQuantity: number;
 
   private products: ProductCart[];
+  private prod: Product[] = [];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -47,6 +49,17 @@ export class CartComponent implements OnInit {
         this.colors$ = <Color[]>color;
         // console.log(this.colors$);
       });
+
+    this.productCartService.getProducts().valueChanges().subscribe(
+      s => {
+        s.forEach(element => {
+
+          // console.log(element);
+          this.prod.push(element);
+        });
+        console.log(this.prod);
+      }
+    );
 
     // localStorage.setItem("cart", JSON.stringify(this.items));
     this.activatedRoute.params.subscribe(params => {
@@ -86,51 +99,33 @@ export class CartComponent implements OnInit {
       }
     });
 
-
-    // console.log(JSON.parse(localStorage.getItem('cart')));
-
-
-    if (localStorage.getItem('cart') != null) {
-      // this.products = JSON.parse(localStorage.getItem('cart'));
-      // this.loadCart();
-    } else {
-      // var item: Item = {
-      //   product: this.productCartService.find("1"),
-      //   quantity: 1
-      // };
-
-      // let cart: any = [];
-      // cart.push(JSON.stringify(item));
-      // localStorage.setItem('cart', JSON.stringify(cart));
-    }
-
   }
 
   changeQuantity(i) {
 
-    this.total = 0;
-    console.log(this.productQuantity);
+    // this.total = 0;
+    // console.log(this.productQuantity);
 
-    this.items = [];
+    // this.items = [];
 
-    let cart = JSON.parse(localStorage.getItem('cart'));
-    // cart[i].quantity = this.productQuantity as number;
+    // let cart = JSON.parse(localStorage.getItem('cart'));
+    // // cart[i].quantity = this.productQuantity as number;
+    // // localStorage.setItem("cart", JSON.stringify(cart));
+
+    // let item = JSON.parse(cart[i]);
+    // this.items.push({
+    //   product: item.product,
+    //   quantity: this.productQuantity
+    // });
+
+    // this.total += item.product.price * item.quantity;
+
+    // cart[i] = JSON.stringify(item);
     // localStorage.setItem("cart", JSON.stringify(cart));
 
-    let item = JSON.parse(cart[i]);
-    this.items.push({
-      product: item.product,
-      quantity: this.productQuantity
-    });
-
-    this.total += item.product.price * item.quantity;
-
-    cart[i] = JSON.stringify(item);
-    localStorage.setItem("cart", JSON.stringify(cart));
-
-    for (var index = 0; i < cart.length; i++) {
-      // let item = JSON.parse(cart[i]);
-    }
+    // for (var index = 0; i < cart.length; i++) {
+    //   // let item = JSON.parse(cart[i]);
+    // }
   }
 
   loadCart(): void {

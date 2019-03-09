@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import { Product } from '../model/product';
 
 @Injectable({
     providedIn: 'root',
@@ -6,7 +8,9 @@ import { Injectable } from '@angular/core';
 export class HomeService {
 
     loadAPI: Promise<any>;
-    constructor() {
+    private featureProducts: AngularFireList<Product>;
+
+    constructor(private db: AngularFireDatabase) {
         this.loadAPI = new Promise((resolve) => {
             // LOAD SCRIPS HOME
             this.loadScript('../assets/vendor/jquery/jquery-3.2.1.min.js');
@@ -28,6 +32,15 @@ export class HomeService {
 
 
     }
+
+
+    getFeatureProducts() {
+        return this.db.list('products', ref => ref.orderByChild('percent_discount').limitToLast(4));
+
+    }
+
+
+
 
     public loadScript(url: string) {
         var isFound = false;

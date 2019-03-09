@@ -25,7 +25,11 @@ import { DashboardProductEditComponent } from './dashboard-product-edit/dashboar
 import { DashboardProductCreateComponent } from './dashboard-product-create/dashboard-product-create.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductCartService } from './service/productCart.service';
-
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { PagerService } from './service/index';
+// Import below modules for NGX Toastr
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,8 +53,12 @@ import { ProductCartService } from './service/productCart.service';
     HttpClientModule,
     ReactiveFormsModule,
     StorageServiceModule,
+    NgbPaginationModule,
+    NgbAlertModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot() // ToastrModule added
   ],
-  providers: [HomeService, ProductService, TopMenuService, DashboardService, ProductCartService],
+  providers: [HomeService, ProductService, TopMenuService, DashboardService, ProductCartService, PagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -53,23 +53,23 @@
             </li>
 
             <li class="sale-noti">
-              <a href="product.html">Sale</a>
+              <a href="">Sale</a>
             </li>
 
             <li>
-              <a href="cart.html">Features</a>
+              <a href="">Features</a>
             </li>
 
             <li>
-              <a href="blog.html">Blog</a>
+              <a href="">Blog</a>
             </li>
 
             <li>
-              <a href="about.html">About</a>
+              <a href="">About</a>
             </li>
 
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="">Contact</a>
             </li>
 
             <li>
@@ -86,8 +86,8 @@
         </a>
 
 
-        <a *ngIf="logging" [routerLink]="['/home']" class="p-l-5" (click)="logout()"> Log out <strong>{{emailUser |
-            uppercase}}</strong></a>
+        <a *ngIf="logging" [routerLink]="['/home']" class="p-l-5 dis-block header-wrapicon1" (click)="logout()"> Log
+          out <p style="font-size: 60%">{{emailUser|lowercase}}</p></a>
 
         <span class="linedivide1"></span>
 
@@ -324,27 +324,27 @@
         </li>
 
         <li class="item-menu-mobile">
-          <a href="product.html">Shop</a>
+          <a [routerLink]="[ '/product']">Shop</a>
         </li>
 
         <li class="item-menu-mobile">
-          <a href="product.html">Sale</a>
+          <a [routerLink]="[ '/']">Sale</a>
         </li>
 
         <li class="item-menu-mobile">
-          <a href="cart.html">Features</a>
+          <a [routerLink]="[ '/']">Features</a>
         </li>
 
         <li class="item-menu-mobile">
-          <a href="blog.html">Blog</a>
+          <a [routerLink]="[ '/']">Blog</a>
         </li>
 
         <li class="item-menu-mobile">
-          <a href="about.html">About</a>
+          <a [routerLink]="[ '/']">About</a>
         </li>
 
         <li class="item-menu-mobile">
-          <a href="contact.html">Contact</a>
+          <a [routerLink]="[ '/']">Contact</a>
         </li>
       </ul>
     </nav>
